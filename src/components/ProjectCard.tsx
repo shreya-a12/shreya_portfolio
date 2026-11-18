@@ -129,7 +129,6 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onSelect, onT
             <Github className="w-3.5 h-3.5" />
             <span>GitHub Repo ↗</span>
           </a>
-        </div>
           <button
             onClick={handleDemoClick}
             aria-label="Live Demo"
