@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shreya Singh | Software Developer &amp; AI/Data Science Student</title>
+  <meta name="description" content="Portfolio of Shreya Singh — B.E. Artificial Intelligence &amp; Data Science at CMRIT Bengaluru (9.53 CGPA, 6-Time Semester Topper). Building intelligent full-stack applications and AI-powered solutions." />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            ivory: {
+              50: '#FCFCF9',
+              100: '#F8F7F2',
+              200: '#EEECE3',
+              300: '#E4E3DA',
+              400: '#D2D0C4',
+            },
+            sage: {
+              50: '#F3F6F4',
+              100: '#E4EBE5',
+              200: '#C7D7C9',
+              300: '#A4BFAC',
+              400: '#78977A',
+              500: '#5F7C61',
+              600: '#48614A',
+              700: '#355243',
+              800: '#263D32',
+              900: '#182820',
+            },
+            charcoal: {
+              50: '#F6F6F5',
+              100: '#EAEBE9',
+              300: '#A6ABA2',
+              400: '#74786F',
+              500: '#555850',
+              700: '#2D312B',
+              800: '#252923',
+              900: '#1A1C18',
+            },
+            darkbg: {
+              base: '#141715',
+              card: '#1D221E',
+              surface: '#242B25',
+              border: '#2E3830',
+              muted: '#8D968B',
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'Menlo', 'monospace'],
+          },
+          boxShadow: {
+            'soft-sm': '0 2px 8px -2px rgba(38, 61, 50, 0.05)',
+            'soft-md': '0 8px 24px -4px rgba(38, 61, 50, 0.08)',
+            'soft-lg': '0 16px 36px -6px rgba(38, 61, 50, 0.12)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .editorial-grid {
+      background-size: 40px 40px;
+      background-image: 
+        linear-gradient(to right, rgba(228, 227, 218, 0.45) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(228, 227, 218, 0.45) 1px, transparent 1px);
+    }
+    .dark .editorial-grid {
+      background-image: 
+        linear-gradient(to right, rgba(46, 56, 48, 0.4) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(46, 56, 48, 0.4) 1px, transparent 1px);
+    }
+    .glass-nav {
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      background-color: rgba(248, 247, 242, 0.88);
+    }
+    .dark .glass-nav {
+      background-color: rgba(20, 23, 21, 0.88);
+    }
+  </style>
+</head>
+
+<body class="bg-ivory-100 text-charcoal-800 dark:bg-darkbg-base dark:text-ivory-100 antialiased selection:bg-sage-300 selection:text-sage-900 transition-colors duration-300">
+
+  <!-- Top Scroll Progress Bar -->
+  <div id="scrollProgress" class="fixed top-0 left-0 h-[2.5px] bg-sage-400 z-50 transition-all duration-75" style="width: 0%;"></div>
+
+  <!-- Sticky Navbar -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-40 transition-all duration-300 py-5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="#hero" class="group flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-sage-800 text-ivory-100 flex items-center justify-center font-serif font-bold text-lg shadow-soft-sm border border-sage-600/40">
+          SS
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif font-bold text-base tracking-tight text-sage-800 dark:text-ivory-50">
+            Shreya Singh
+          </span>
+          <span class="text-[10px] font-mono uppercase tracking-wider text-charcoal-400 dark:text-darkbg-muted">
+            Software Dev • AI/DS
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Links -->
+      <nav class="hidden md:flex items-center gap-1 bg-ivory-200/50 dark:bg-darkbg-card/60 p-1.5 rounded-full border border-ivory-300 dark:border-darkbg-border">
+        <a href="#hero" class="nav-link px-3.5 py-1.5 text-xs font-mono font-medium rounded-full bg-sage-800 text-ivory-100 shadow-soft-sm" data-id="hero">Home</a>
+        <a href="#about" class="nav-link px-3.5 py-1.5 text-xs font-mono font-medium rounded-full text-charcoal-600 dark:text-ivory-300 hover:text-charcoal-900 dark:hover:text-ivory-50" data-id="about">About</a>
+        <a href="#skills" class="nav-link px-3.5 py-1.5 text-xs font-mono font-medium rounded-full text-charcoal-600 dark:text-ivory-300 hover:text-charcoal-900 dark:hover:text-ivory-50" data-id="skills">Skills</a>
+        <a href="#projects" class="nav-link px-3.5 py-1.5 text-xs font-mono font-medium rounded-full text-charcoal-600 dark:text-ivory-300 hover:text-charcoal-900 dark:hover:text-ivory-50" data-id="projects">Projects</a>
+        <a href="#achievements" class="nav-link px-3.5 py-1.5 text-xs font-mono font-medium rounded-full text-charcoal-600 dark:text-ivory-300 hover:text-charcoal-900 dark:hover:text-ivory-50" data-id="achievements">Achievements</a>
+        <a href="#contact" class="nav-link px-3.5 py-1.5 text-xs font-mono font-medium rounded-full text-charcoal-600 dark:text-ivory-300 hover:text-charcoal-900 dark:hover:text-ivory-50" data-id="contact">Contact</a>
+      </nav>
+
+      <!-- Right CTAs -->
+      <div class="hidden md:flex items-center gap-3">
+        <!-- Theme Toggle -->
+        <button id="themeToggleBtn" aria-label="Toggle theme" class="p-2.5 rounded-full border border-ivory-300 dark:border-darkbg-border bg-ivory-100 dark:bg-darkbg-card text-charcoal-700 dark:text-ivory-200 hover:border-sage-400 transition-colors">
+          <i data-lucide="moon" class="w-4 h-4 dark:hidden"></i>
+          <i data-lucide="sun" class="w-4 h-4 hidden dark:inline-block text-amber-300"></i>
+        </button>
+
+        <!-- Resume Button -->
+        <button onclick="openResumeModal()" class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-mono font-semibold bg-sage-800 hover:bg-sage-900 text-ivory-50 shadow-soft-sm transition-all border border-sage-700">
+          <i data-lucide="download" class="w-3.5 h-3.5"></i>
+          <span>Resume</span>
+        </button>
+      </div>
+
+      <!-- Mobile Button -->
+      <div class="flex items-center gap-2 md:hidden">
+        <button onclick="toggleTheme()" class="p-2 rounded-lg border border-ivory-300 dark:border-darkbg-border">
+          <i data-lucide="moon" class="w-4 h-4 dark:hidden"></i>
+          <i data-lucide="sun" class="w-4 h-4 hidden dark:inline-block text-amber-300"></i>
+        </button>
+        <button onclick="toggleMobileMenu()" class="p-2 rounded-lg border border-ivory-300 dark:border-darkbg-border">
+          <i data-lucide="menu" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobileDrawer" class="hidden md:hidden glass-nav border-b border-ivory-300 dark:border-darkbg-border px-6 py-6 space-y-4">
+      <nav class="flex flex-col space-y-2">
+        <a href="#hero" onclick="toggleMobileMenu()" class="px-4 py-2 rounded-xl text-sm font-mono font-medium text-charcoal-700 dark:text-ivory-200 hover:bg-ivory-200">Home</a>
+        <a href="#about" onclick="toggleMobileMenu()" class="px-4 py-2 rounded-xl text-sm font-mono font-medium text-charcoal-700 dark:text-ivory-200 hover:bg-ivory-200">About</a>
+        <a href="#skills" onclick="toggleMobileMenu()" class="px-4 py-2 rounded-xl text-sm font-mono font-medium text-charcoal-700 dark:text-ivory-200 hover:bg-ivory-200">Skills</a>
+        <a href="#projects" onclick="toggleMobileMenu()" class="px-4 py-2 rounded-xl text-sm font-mono font-medium text-charcoal-700 dark:text-ivory-200 hover:bg-ivory-200">Projects</a>
+        <a href="#achievements" onclick="toggleMobileMenu()" class="px-4 py-2 rounded-xl text-sm font-mono font-medium text-charcoal-700 dark:text-ivory-200 hover:bg-ivory-200">Achievements</a>
+        <a href="#contact" onclick="toggleMobileMenu()" class="px-4 py-2 rounded-xl text-sm font-mono font-medium text-charcoal-700 dark:text-ivory-200 hover:bg-ivory-200">Contact</a>
+      </nav>
+      <div class="pt-2 border-t border-ivory-300">
+        <button onclick="toggleMobileMenu(); openResumeModal()" class="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-xs font-mono font-semibold bg-sage-800 text-ivory-50">
+          <i data-lucide="download" class="w-4 h-4"></i>
+          <span>View &amp; Download Resume</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="relative min-h-[92vh] pt-28 pb-16 lg:pt-36 lg:pb-24 flex items-center overflow-hidden editorial-grid">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Left Hero Text -->
+          <div class="lg:col-span-7 space-y-6 sm:space-y-8">
+            <div class="flex flex-wrap items-center gap-3">
+              <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-semibold tracking-wider uppercase bg-sage-100 dark:bg-sage-950/70 text-sage-800 dark:text-sage-300 border border-sage-300/70 dark:border-sage-800">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                Open to Learning &amp; Opportunities
+              </span>
+              <span class="text-xs font-mono uppercase tracking-widest text-charcoal-400 dark:text-darkbg-muted hidden sm:inline-block">
+                HELLO, I'M SHREYA SINGH
+              </span>
+            </div>
+
+            <div class="space-y-3">
+              <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-serif font-bold tracking-tight text-sage-800 dark:text-ivory-50 leading-[1.08]">
+                Building Intelligent Solutions <span class="italic font-normal text-sage-600 dark:text-sage-400">Through Code.</span>
+              </h1>
+              <p className="text-lg sm:text-xl font-mono text-sage-700 dark:text-sage-300 font-medium">
+                Software Developer | Final Year AI &amp; Data Science Student
+              </p>
+            </div>
+
+            <p class="text-base sm:text-lg text-charcoal-500 dark:text-darkbg-muted leading-relaxed font-sans max-w-2xl">
+              I build meaningful digital experiences, full-stack applications, and AI-powered solutions by combining creativity, technology, and problem-solving.
+            </p>
+
+            <div class="flex flex-wrap items-center gap-3 pt-2">
+              <a href="#projects" class="inline-flex items-center gap-2 px-5 py-3 rounded-full text-xs sm:text-sm font-mono font-semibold bg-sage-800 hover:bg-sage-900 text-ivory-50 shadow-soft-sm transition-all border border-sage-700">
+                <span>Explore Projects</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+
+              <a href="public/resume.pdf" download="Shreya_Singh_Resume.pdf" class="inline-flex items-center gap-2 px-5 py-3 rounded-full text-xs sm:text-sm font-mono font-semibold bg-emerald-800 hover:bg-emerald-900 text-ivory-50 shadow-soft-sm transition-all border border-emerald-700" title="Download Official Resume PDF">
+                <svg class="w-4 h-4 stroke-current fill-none" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span>Download Resume</span>
+              </a>
+
+              <button onclick="openResumeModal()" class="inline-flex items-center gap-2 px-4 py-3 rounded-full text-xs sm:text-sm font-mono font-semibold bg-white dark:bg-darkbg-card hover:bg-ivory-200 dark:hover:bg-darkbg-surface text-charcoal-800 dark:text-ivory-100 border border-ivory-300 dark:border-darkbg-border shadow-soft-sm transition-all" title="View Full Resume in Interactive Modal">
+                <i data-lucide="file-text" class="w-4 h-4"></i>
+                <span>View CV</span>
+              </button>
+
+              <div class="flex items-center gap-2 pl-1">
+                <a href="https://github.com/shreya-a12" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-full bg-ivory-100 dark:bg-darkbg-surface border border-ivory-300 dark:border-darkbg-border text-charcoal-600 dark:text-ivory-300 hover:text-sage-700 transition-colors" title="GitHub (shreya-a12)">
+                  <i data-lucide="github" class="w-4 h-4"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/shreya-singh-1bb590328/" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-full bg-ivory-100 dark:bg-darkbg-surface border border-ivory-300 dark:border-darkbg-border text-charcoal-600 dark:text-ivory-300 hover:text-sage-700 transition-colors" title="LinkedIn Profile">
+                  <i data-lucide="linkedin" class="w-4 h-4"></i>
+                </a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=singhsharaya00@gmail.com" target="_blank" rel="noopener noreferrer" onclick="copyEmail()" class="p-2.5 rounded-full bg-ivory-100 dark:bg-darkbg-surface border border-ivory-300 dark:border-darkbg-border text-charcoal-600 dark:text-ivory-300 hover:text-sage-700 transition-colors" title="Send Email (singhsharaya00@gmail.com)">
+                  <i data-lucide="mail" class="w-4 h-4"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Quick Metrics -->
+            <div class="pt-6 border-t border-ivory-300 dark:border-darkbg-border grid grid-cols-3 gap-4 max-w-xl">
+              <div>
+                <div class="text-2xl sm:text-3xl font-serif font-bold text-sage-800 dark:text-ivory-50">9.53</div>
+                <div class="text-xs font-mono text-charcoal-400 dark:text-darkbg-muted mt-0.5">Cumulative CGPA</div>
+              </div>
+              <div>
+                <div class="text-2xl sm:text-3xl font-serif font-bold text-sage-800 dark:text-ivory-50">6-Time</div>
+                <div class="text-xs font-mono text-charcoal-400 dark:text-darkbg-muted mt-0.5">Semester Topper</div>
+              </div>
+              <div>
+                <div class="text-2xl sm:text-3xl font-serif font-bold text-sage-800 dark:text-ivory-50">July 2027</div>
+                <div class="text-xs font-mono text-charcoal-400 dark:text-darkbg-muted mt-0.5">Graduation</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Avatar Frame & Floating Badges -->
+          <div class="lg:col-span-5 flex justify-center lg:justify-end relative">
+            <div class="relative w-full max-w-md">
+              <div class="rounded-3xl overflow-hidden bg-ivory-200 dark:bg-darkbg-card border-2 border-ivory-300 dark:border-darkbg-border shadow-soft-lg p-3">
+                <div class="relative w-full aspect-[4/5] rounded-2xl bg-gradient-to-b from-[#E7EFE9] via-[#DCE6DE] to-[#C8D6CB] dark:from-[#1D2621] dark:via-[#18211B] dark:to-[#121A15] p-6 flex flex-col justify-between overflow-hidden border border-sage-300/60 dark:border-sage-800/60">
+                  
+                  <div class="flex justify-between items-start">
+                    <span class="font-mono text-[11px] tracking-widest uppercase px-2.5 py-1 rounded bg-white/70 dark:bg-darkbg-card/70 text-sage-800 dark:text-sage-200">
+                      CMRIT • Final Year
+                    </span>
+                    <span class="w-8 h-8 rounded-full bg-white/80 dark:bg-darkbg-card/80 flex items-center justify-center text-sage-700">
+                      <i data-lucide="code-2" class="w-4 h-4"></i>
+                    </span>
+                  </div>
+
+                  <div class="my-auto text-center">
+                    <div class="w-36 h-36 sm:w-44 sm:h-44 rounded-full bg-gradient-to-tr from-sage-800 to-sage-600 p-1.5 shadow-soft-md mx-auto overflow-hidden">
+                      <img src="shreya-photo.jpg" alt="Shreya Singh" class="w-full h-full object-cover rounded-full" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full rounded-full bg-ivory-100 dark:bg-darkbg-base flex flex-col items-center justify-center text-sage-800 dark:text-ivory-50 border-2 border-sage-300\'><span class=\'font-serif font-bold text-4xl sm:text-5xl tracking-tight\'>SS</span><span class=\'text-[10px] font-mono uppercase tracking-widest text-charcoal-400 mt-1\'>Shreya Singh</span></div>'">
+                    </div>
+                    <div class="mt-4">
+                      <h2 class="font-serif font-bold text-xl text-sage-900 dark:text-ivory-50">Shreya Singh</h2>
+                      <p class="text-xs font-mono text-sage-700 dark:text-sage-300 mt-0.5">Artificial Intelligence &amp; Data Science</p>
+                    </div>
+                  </div>
+
+                  <div class="flex justify-between items-center text-[11px] font-mono text-charcoal-600 dark:text-darkbg-muted bg-white/70 dark:bg-darkbg-card/70 px-3 py-1.5 rounded-lg">
+                    <span>Bengaluru, India</span>
+                    <span class="text-sage-700 dark:text-sage-300 font-semibold">Rank 1 / Topper</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Floating Card 1 -->
+              <div class="absolute -bottom-6 -left-6 sm:-left-8 z-20 p-4 rounded-2xl bg-white dark:bg-darkbg-card border border-ivory-300 dark:border-darkbg-border shadow-soft-lg flex items-center gap-3.5">
+                <div class="p-3 rounded-xl bg-amber-50 dark:bg-amber-950/50 border border-amber-200 text-amber-600">
+                  <i data-lucide="award" class="w-6 h-6"></i>
+                </div>
+                <div>
+                  <div class="font-serif font-bold text-base text-sage-800 dark:text-ivory-50">9.53 CGPA</div>
+                  <div class="text-xs font-sans text-charcoal-500 dark:text-darkbg-muted">6-Time Semester Topper</div>
+                </div>
+              </div>
+
+              <!-- Floating Card 2 -->
+              <div class="absolute -top-4 -right-4 sm:-right-6 z-20 p-3.5 rounded-2xl bg-white dark:bg-darkbg-card border border-ivory-300 dark:border-darkbg-border shadow-soft-lg flex items-center gap-3">
+                <div class="p-2.5 rounded-xl bg-sage-100 dark:bg-sage-950/60 text-sage-700">
+                  <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <div class="font-mono font-bold text-xs text-sage-800 dark:text-ivory-50">CMRIT Bengaluru</div>
+                  <div class="text-[11px] font-sans text-charcoal-400 dark:text-darkbg-muted">Final Year (Class of 2027)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-20 lg:py-28 bg-ivory-100 dark:bg-darkbg-base transition-colors duration-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-12 max-w-3xl">
+          <div class="inline-flex items-center gap-2 mb-3 text-xs tracking-widest font-mono uppercase text-sage-600 dark:text-sage-300 font-semibold">
+            <span class="text-charcoal-400 font-bold">01</span>
+            <span>/</span>
+            <span>ABOUT ME</span>
+            <span class="w-6 h-[1.5px] bg-sage-400 inline-block ml-1"></span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold tracking-tight text-sage-800 dark:text-ivory-50 mb-4">
+            About Me
+          </h2>
+          <p class="text-base sm:text-lg text-charcoal-400 dark:text-darkbg-muted leading-relaxed font-sans">
+            A little about my journey, interests, and what drives me.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-start">
+          <div class="lg:col-span-7 space-y-6">
+            <div class="p-8 rounded-3xl bg-white dark:bg-darkbg-card border border-ivory-300 dark:border-darkbg-border shadow-soft-sm space-y-5">
+              <p class="text-base sm:text-lg text-charcoal-600 dark:text-darkbg-muted leading-relaxed font-sans">
+                I am currently a final-year engineering student pursuing my Bachelor of Engineering in Artificial Intelligence and Data Science at CMR Institute of Technology, Bengaluru. With a CGPA of 9.53, I have consistently maintained strong academic performance and achieved department topper status across multiple semesters.
+              </p>
+              <p class="text-base sm:text-lg text-charcoal-600 dark:text-darkbg-muted leading-relaxed font-sans">
+                My technical journey involves building full-stack applications, experimenting with machine learning models, and exploring intelligent software systems.
+              </p>
+              <p class="text-base sm:text-lg text-charcoal-600 dark:text-darkbg-muted leading-relaxed font-sans">
+                I enjoy understanding how technology works, developing practical solutions, and continuously improving my programming and problem-solving skills.
+              </p>
+              <p class="text-base sm:text-lg text-charcoal-600 dark:text-darkbg-muted leading-relaxed font-sans">
+                Beyond academics, I am interested in exploring emerging AI tools, learning new technologies, and participating in technical communities.
+              </p>
+
+              <div class="pt-4 border-t border-ivory-200 dark:border-darkbg-border">
+                <h4 class="text-xs font-mono uppercase tracking-wider text-sage-800 dark:text-sage-300 font-bold mb-3">Core Engineering Interests</h4>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1 rounded-full text-xs font-mono bg-ivory-100 dark:bg-darkbg-surface text-charcoal-700 dark:text-ivory-200 border border-ivory-300">Software Development</span>
+                  <span class="px-3 py-1 rounded-full text-xs font-mono bg-ivory-100 dark:bg-darkbg-surface text-charcoal-700 dark:text-ivory-200 border border-ivory-300">Full Stack Web Development</span>
+                  <span class="px-3 py-1 rounded-full text-xs font-mono bg-ivory-100 dark:bg-darkbg-surface text-charcoal-700 dark:text-ivory-200 border border-ivory-300">AI and Machine Learning</span>
+                  <span class="px-3 py-1 rounded-full text-xs font-mono bg-ivory-100 dark:bg-darkbg-surface text-charcoal-700 dark:text-ivory-200 border border-ivory-300">Data Science</span>
+                  <span class="px-3 py-1 rounded-full text-xs font-mono bg-ivory-100 dark:bg-darkbg-surface text-charcoal-700 dark:text-ivory-200 border border-ivory-300">Problem Solving</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 space-y-5">
+            <!-- Card 1 -->
+            <div class="p-6 rounded-2xl bg-white dark:bg-darkbg-card border border-ivory-300 dark:border-darkbg-border shadow-soft-sm">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="p-2.5 rounded-xl bg-ivory-100 dark:bg-darkbg-surface text-sage-600"><i data-lucide="graduation-cap" class="w-5 h-5"></i></div>
+                <h3 class="font-serif font-bold text-lg text-sage-800 dark:text-ivory-50">Education</h3>
+              </div>
+              <ul class="space-y-2 text-xs sm:text-sm text-charcoal-600 dark:text-ivory-200">
+                <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-sage-500"></i> B.E. in Artificial Intelligence &amp; Data Science</li>
+                <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-sage-500"></i> CMR Institute of Technology, Bengaluru</li>
+                <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-sage-500"></i> Final Year Student (Expected: July 2027)</li>
+              </ul>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="p-6 rounded-2xl bg-white dark:bg-darkbg-card border border-ivory-300 dark:border-darkbg-border shadow-soft-sm">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="p-2.5 rounded-xl bg-ivory-100 dark:bg-darkbg-surface text-sage-600"><i data-lucide="award" class="w-5 h-5"></i></div>
+                <h3 class="font-serif font-bold text-lg text-sage-800 dark:text-ivory-50">Academic Excellence</h3>
+              </div>
+              <ul class="space-y-2 text-xs sm:text-sm text-charcoal-600 dark:text-ivory-200">
+                <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-sage-500"></i> CGPA: 9.53 / 10.0</li>
+                <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-sage-500"></i> Department Topper across all semesters</li>
+                <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-sage-500"></i> Strong foundation in algorithms &amp; systems</li>
+              </ul>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="p-6 rounded-2xl bg-white dark:bg-darkbg-card border border-ivory-300 dark:border-darkbg-border shadow-soft-sm">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="p-2.5 rounded-xl bg-ivory-100 dark:bg-darkbg-surface text-sage-600"><i data-lucide="compass" class="w-5 h-5"></i></div>
+                <h3 class="font-serif font-bold text-lg text-sage-800 dark:text-ivory-50">Interests</h3>
+              </div>
+              <ul class="space-y-2 text-xs sm:text-sm text-charcoal-600 dark:text-ivory-200">
+                <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-sage-500"></i> Software Development</li>
+                <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-sage-500"></i> AI and Machine Learning</li>
+                <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-sage-500"></i> Full Stack Web Development</li>
+                <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-sage-500"></i> Exploring Emerging Technologies</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="py-20 lg:py-28 bg-ivory-200/50 dark:bg-darkbg-card/40 border-y border-ivory-300 dark:border-darkbg-border">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-12 max-w-3xl">
+          <div class="inline-flex items-center gap-2 mb-3 text-xs tracking-widest font-mono uppercase text-sage-600 dark:text-sage-300 font-semibold">
+            <span class="text-charcoal-400 font-bold">02</span>
+            <span>/</span>
+            <span>TECHNICAL SKILLS</span>
+            <span class="w-6 h-[1.5px] bg-sage-400 inline-block ml-1"></span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold tracking-tight text-sage-800 dark:text-ivory-50 mb-4">
+            Technical Skills
+          </h2>
+          <p class="text-base sm:text-lg text-charcoal-400 dark:text-darkbg-muted leading-relaxed font-sans">
+            Technologies and tools I use to build and develop solutions.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- 1. Languages -->
+          <div class="p-6 bg-white dark:bg-darkbg-card rounded-2xl border border-ivory-300 dark:border-darkbg-border shadow-soft-sm">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="p-2.5 rounded-xl bg-ivory-100 dark:bg-darkbg-surface text-sage-700"><i data-lucide="code-2" class="w-5 h-5"></i></div>
+              <div>
+                <h3 class="font-serif font-bold text-lg text-sage-800 dark:text-ivory-50">Programming Languages</h3>
+                <span class="text-[11px] font-mono text-sage-600 font-semibold">LANGUAGES</span>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-ivory-100 dark:bg-darkbg-surface border border-sage-300 font-medium">Java</span>
+              <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-ivory-100 dark:bg-darkbg-surface border border-sage-300 font-medium">Python</span>
+              <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-ivory-50 dark:bg-darkbg-base border border-ivory-200">C</span>
+              <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-ivory-100 dark:bg-darkbg-surface border border-sage-300 font-medium">JavaScript</span>
+              <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-ivory-100 dark:bg-darkbg-surface border border-sage-300 font-medium">TypeScript</span>
+              <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-ivory-50 dark:bg-darkbg-base border border-ivory-200">SQL</span>
+            </div>
+          </div>
+
+          <!-- 2. Frontend -->
+          <div class="p-6 bg-white dark:bg-darkbg-card rounded-2xl border border-ivory-300 dark:border-darkbg-border shadow-soft-sm">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="p-2.5 rounded-xl bg-ivory-100 dark:bg-darkbg-surface text-sage-700"><i data-lucide="layout" class="w-5 h-5"></i></div>
+              <div>
+                <h3 class="font-serif font-bold text-lg text-sage-800 dark:text-ivory-50">Frontend Development</h3>
+                <span class="text-[11px] font-mono text-sage-600 font-semibold">FRONTEND</span>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-ivory-100 dark:bg-darkbg-surface border border-sage-300 font-medium">React.js</span>
+              <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-ivory-100 dark:bg-darkbg-surface border border-sage-300 font-medium">HTML5</span>
+              <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-ivory-50 dark:bg-darkbg-base border border-ivory-200">CSS3</span>
+              <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-ivory-50 dark:bg-darkbg-base border border-ivory-200">React Router</span>
+            </div>
+          </div>
+
+          <!-- 3. Backend -->
+          <div class="p-6 bg-white dark:bg-darkbg-card rounded-2xl border border-ivory-300 dark:border-darkbg-border shadow-soft-sm">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="p-2.5 rounded-xl bg-ivory-100 dark:bg-darkbg-surface text-sage-700"><i data-lucide="server" class="w-5 h-5"></i></div>
+              <div>
+                <h3 class="font-serif font-bold text-lg text-sage-800 dark:text-ivory-50">Backend Development</h3>
+                <span class="text-[11px] font-mono text-sage-600 font-semibold">BACKEND</span>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-ivory-100 dark:bg-darkbg-surface border border-sage-300 font-medium">Node.js</span>
+              <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-ivory-100 dark:bg-darkbg-surface border border-sage-300 font-medium">Express.js</span>
+              <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-ivory-100 dark:bg-darkbg-surface border border-sage-300 font-medium">RESTful APIs</span>
+              <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-ivory-50 dark:bg-darkbg-base border border-ivory-200">FastAPI</span>
+              <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-ivory-50 dark:bg-darkbg-base border border-ivory-200">Spring Boot</span>
+            </div>
+          </div>
+
+          <!-- 4. Databases -->
+          <div class="p-6 bg-white dark:bg-darkbg-card rounded-2xl border border-ivory-300 dark:border-darkbg-border shadow-soft-sm">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="p-2.5 rounded-xl bg-ivory-100 dark:bg-darkbg-surface text-sage-700"><i data-lucide="database" class="w-5 h-5"></i></div>
+              <div>
+                <h3 class="font-serif font-bold text-lg text-sage-800 dark:text-ivory-50">Databases</h3>
+                <span class="text-[11px] font-mono text-sage-600 font-semibold">STORAGE</span>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-ivory-100 dark:bg-darkbg-surface border border-sage-300 font-medium">MongoDB</span>
+              <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-ivory-100 dark:bg-darkbg-surface border border-sage-300 font-medium">MySQL</span>
+            </div>
+          </div>
+
+          <!-- 5. AI & ML -->
+          <div class="p-6 bg-white dark:bg-darkbg-card rounded-2xl border border-ivory-300 dark:border-darkbg-border shadow-soft-sm">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="p-2.5 rounded-xl bg-ivory-100 dark:bg-darkbg-surface text-sage-700"><i data-lucide="brain-circuit" class="w-5 h-5"></i></div>
+              <div>
+                <h3 class="font-serif font-bold text-lg text-sage-800 dark:text-ivory-50">AI &amp; Machine Learning</h3>
+                <span class="text-[11px] font-mono text-sage-600 font-semibold">INTELLIGENCE</span>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-ivory-100 dark:bg-darkbg-surface border border-sage-300 font-medium">PyTorch</span>
+              <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-ivory-100 dark:bg-darkbg-surface border border-sage-300 font-medium">Scikit-learn</span>
+              <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-ivory-50 dark:bg-darkbg-base border border-ivory-200">ResNet18</span>
+              <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-ivory-50 dark:bg-darkbg-base border border-ivory-200">NLP</span>
+              <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-ivory-50 dark:bg-darkbg-base border border-ivory-200">Deep Learning</span>
+              <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-ivory-50 dark:bg-darkbg-base border border-ivory-200">Computer Vision</span>
+            </div>
+          </div>
+
+          <!-- 6. Tools & Platforms -->
+          <div class="p-6 bg-white dark:bg-darkbg-card rounded-2xl border border-ivory-300 dark:border-darkbg-border shadow-soft-sm">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="p-2.5 rounded-xl bg-ivory-100 dark:bg-darkbg-surface text-sage-700"><i data-lucide="wrench" class="w-5 h-5"></i></div>
+              <div>
+                <h3 class="font-serif font-bold text-lg text-sage-800 dark:text-ivory-50">Tools &amp; Platforms</h3>
+                <span class="text-[11px] font-mono text-sage-600 font-semibold">DEVOPS &amp; TOOLS</span>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-ivory-100 dark:bg-darkbg-surface border border-sage-300 font-medium">Git</span>
+              <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-ivory-100 dark:bg-darkbg-surface border border-sage-300 font-medium">GitHub</span>
+              <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-ivory-100 dark:bg-darkbg-surface border border-sage-300 font-medium">VS Code</span>
+              <span class="px-3 py-1.5 rounded-lg text-xs font-mono bg-ivory-50 dark:bg-darkbg-base border border-ivory-200">Power BI</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="py-20 lg:py-28 bg-ivory-100 dark:bg-darkbg-base transition-colors duration-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-12 max-w-3xl">
+          <div class="inline-flex items-center gap-2 mb-3 text-xs tracking-widest font-mono uppercase text-sage-600 dark:text-sage-300 font-semibold">
+            <span class="text-charcoal-400 font-bold">03</span>
+            <span>/</span>
+            <span>PORTFOLIO</span>
+            <span class="w-6 h-[1.5px] bg-sage-400 inline-block ml-1"></span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold tracking-tight text-sage-800 dark:text-ivory-50 mb-4">
+            Featured Projects
+          </h2>
+          <p class="text-base sm:text-lg text-charcoal-400 dark:text-darkbg-muted leading-relaxed font-sans">
+            Some of the applications and intelligent systems I have worked on.
+          </p>
+        </div>
+
+        <!-- 5 Projects Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Project 1: InfraSense AI -->
+          <div class="flex flex-col justify-between bg-white dark:bg-darkbg-card rounded-2xl border border-ivory-300 dark:border-darkbg-border shadow-soft-sm hover:border-sage-400 transition-all duration-300 overflow-hidden">
+            <div>
+              <div class="h-44 bg-gradient-to-br from-sage-900 to-charcoal-900 p-5 text-ivory-100 flex flex-col justify-between">
+                <div class="flex justify-between items-center text-xs font-mono">
+                  <span class="px-2 py-0.5 rounded bg-sage-800 border border-sage-600">Incident Diagnostics</span>
+                  <span class="text-emerald-400 font-bold">Rule-Engine</span>
+                </div>
+                <div class="flex items-end gap-1.5 h-12">
+                  <div class="w-1/6 bg-sage-500/50 h-6 rounded-t"></div>
+                  <div class="w-1/6 bg-sage-500/70 h-10 rounded-t"></div>
+                  <div class="w-1/6 bg-amber-400 h-12 rounded-t animate-pulse"></div>
+                  <div class="w-1/6 bg-sage-500/60 h-8 rounded-t"></div>
+                  <div class="w-1/6 bg-rose-400 h-11 rounded-t"></div>
+                  <div class="w-1/6 bg-sage-500/50 h-7 rounded-t"></div>
+                </div>
+                <div class="text-[11px] font-mono text-sage-300">Alerts: CPU Spike &amp; Queue Backlog</div>
+              </div>
+              <div class="p-6">
+                <span class="text-[11px] font-mono uppercase px-2.5 py-0.5 rounded-full bg-ivory-200 text-charcoal-700 font-semibold">AI &amp; Intelligent Systems</span>
+                <h3 class="text-xl font-serif font-bold text-sage-800 dark:text-ivory-50 mt-2 mb-2">InfraSense AI Diagnostics</h3>
+                <p class="text-sm text-charcoal-500 dark:text-darkbg-muted leading-relaxed font-sans mb-4">
+                  An intelligent infrastructure diagnostics platform designed to identify simulated infrastructure incidents, analyze system metrics, detect operational issues, and generate actionable recommendations.
+                </p>
+                <div class="flex flex-wrap gap-1.5 pt-3 border-t border-ivory-200">
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-ivory-100 border border-ivory-300">React</span>
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-ivory-100 border border-ivory-300">TypeScript</span>
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-ivory-100 border border-ivory-300">Node.js</span>
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-ivory-100 border border-ivory-300">Express</span>
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-ivory-100 border border-ivory-300">Zod</span>
+                </div>
+
+                <!-- Prominent Repository Link Row -->
+                <div class="mt-3.5 pt-2.5 border-t border-ivory-200 dark:border-darkbg-border flex items-center justify-between text-xs font-mono">
+                  <span class="text-charcoal-400 dark:text-darkbg-muted text-[11px]">Repository:</span>
+                  <a href="https://github.com/shreya-a12/infrasense-ai.git" target="_blank" rel="noopener noreferrer" class="text-sage-700 dark:text-sage-300 font-semibold hover:underline inline-flex items-center gap-1 text-[11px] truncate max-w-[220px]" title="https://github.com/shreya-a12/infrasense-ai.git">
+                    <span>shreya-a12/infrasense-ai.git</span>
+                    <svg class="w-3 h-3 stroke-current fill-none flex-shrink-0" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="px-6 py-4 border-t border-ivory-100 dark:border-darkbg-border flex flex-wrap items-center justify-between gap-3 bg-ivory-50/50 dark:bg-darkbg-surface/50">
+              <button onclick="openProjectModal('infrasense-ai')" class="text-xs font-mono font-semibold text-sage-700 dark:text-sage-300 hover:underline inline-flex items-center gap-1">
+                <span>View Architecture</span>
+                <span>→</span>
+              </button>
+              <a href="https://github.com/shreya-a12/infrasense-ai.git" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-sage-800 hover:bg-sage-900 dark:bg-sage-700 dark:hover:bg-sage-600 text-ivory-50 text-xs font-mono font-semibold shadow-soft-sm transition-all hover:scale-105" title="Open GitHub Repository: https://github.com/shreya-a12/infrasense-ai.git">
+                <svg class="w-3.5 h-3.5 fill-current flex-shrink-0" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub Repo ↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 2: ContainerGuard -->
+          <div class="flex flex-col justify-between bg-white dark:bg-darkbg-card rounded-2xl border border-ivory-300 dark:border-darkbg-border shadow-soft-sm hover:border-sage-400 transition-all duration-300 overflow-hidden">
+            <div>
+              <div class="h-44 bg-gradient-to-br from-[#1A2621] to-[#121B17] p-5 text-ivory-100 flex flex-col justify-between">
+                <div class="flex justify-between items-center text-xs font-mono">
+                  <span class="px-2 py-0.5 rounded bg-sage-800 border border-sage-600">Container Security</span>
+                  <span class="text-emerald-400 font-bold">Trivy Gate</span>
+                </div>
+                <div class="grid grid-cols-4 gap-2 my-auto">
+                  <div class="p-1.5 rounded bg-charcoal-900 text-center"><div class="text-[9px] text-rose-300">CRIT</div><div class="font-bold text-rose-400">0</div></div>
+                  <div class="p-1.5 rounded bg-charcoal-900 text-center"><div class="text-[9px] text-amber-300">HIGH</div><div class="font-bold text-amber-400">2</div></div>
+                  <div class="p-1.5 rounded bg-charcoal-900 text-center"><div class="text-[9px] text-blue-300">MED</div><div class="font-bold text-blue-400">5</div></div>
+                  <div class="p-1.5 rounded bg-charcoal-900 text-center"><div class="text-[9px] text-emerald-300">PASS</div><div class="font-bold text-emerald-400">Policy</div></div>
+                </div>
+                <div class="text-[11px] font-mono text-sage-300">Scan Pipeline: FastAPI + SQLite</div>
+              </div>
+              <div class="p-6">
+                <span class="text-[11px] font-mono uppercase px-2.5 py-0.5 rounded-full bg-ivory-200 text-charcoal-700 font-semibold">Systems &amp; Security</span>
+                <h3 class="text-xl font-serif font-bold text-sage-800 dark:text-ivory-50 mt-2 mb-2">ContainerGuard</h3>
+                <p class="text-sm text-charcoal-500 dark:text-darkbg-muted leading-relaxed font-sans mb-4">
+                  A container security analysis platform that scans container images, identifies vulnerabilities, evaluates security policies, and generates structured vulnerability reports.
+                </p>
+                <div class="flex flex-wrap gap-1.5 pt-3 border-t border-ivory-200">
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-ivory-100 border border-ivory-300">Python</span>
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-ivory-100 border border-ivory-300">FastAPI</span>
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-ivory-100 border border-ivory-300">Trivy</span>
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-ivory-100 border border-ivory-300">SQLite</span>
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-ivory-100 border border-ivory-300">React</span>
+                </div>
+
+                <!-- Prominent Repository Link Row -->
+                <div class="mt-3.5 pt-2.5 border-t border-ivory-200 dark:border-darkbg-border flex items-center justify-between text-xs font-mono">
+                  <span class="text-charcoal-400 dark:text-darkbg-muted text-[11px]">Repository:</span>
+                  <a href="https://github.com/shreya-a12/containerguard.git" target="_blank" rel="noopener noreferrer" class="text-sage-700 dark:text-sage-300 font-semibold hover:underline inline-flex items-center gap-1 text-[11px] truncate max-w-[220px]" title="https://github.com/shreya-a12/containerguard.git">
+                    <span>shreya-a12/containerguard.git</span>
+                    <svg class="w-3 h-3 stroke-current fill-none flex-shrink-0" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="px-6 py-4 border-t border-ivory-100 dark:border-darkbg-border flex flex-wrap items-center justify-between gap-3 bg-ivory-50/50 dark:bg-darkbg-surface/50">
+              <button onclick="openProjectModal('containerguard')" class="text-xs font-mono font-semibold text-sage-700 dark:text-sage-300 hover:underline inline-flex items-center gap-1">
+                <span>View Architecture</span>
+                <span>→</span>
+              </button>
+              <a href="https://github.com/shreya-a12/containerguard.git" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-sage-800 hover:bg-sage-900 dark:bg-sage-700 dark:hover:bg-sage-600 text-ivory-50 text-xs font-mono font-semibold shadow-soft-sm transition-all hover:scale-105" title="Open GitHub Repository: https://github.com/shreya-a12/containerguard.git">
+                <svg class="w-3.5 h-3.5 fill-current flex-shrink-0" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub Repo ↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 3: Food Recognition & Calorie Prediction -->
+          <div class="flex flex-col justify-between bg-white dark:bg-darkbg-card rounded-2xl border border-ivory-300 dark:border-darkbg-border shadow-soft-sm hover:border-sage-400 transition-all duration-300 overflow-hidden">
+            <div>
+              <div class="h-44 bg-gradient-to-br from-[#232F28] to-[#141E19] p-5 text-ivory-100 flex flex-col justify-between">
+                <div class="flex justify-between items-center text-xs font-mono">
+                  <span class="px-2 py-0.5 rounded bg-sage-800 border border-sage-600">Computer Vision</span>
+                  <span class="text-emerald-400 font-bold">93% Accuracy</span>
+                </div>
+                <div class="flex items-center justify-around my-auto text-center">
+                  <div class="p-1 rounded bg-charcoal-900 text-[10px] font-mono">Image Input</div>
+                  <span class="text-sage-400 font-mono">→</span>
+                  <div class="p-1 rounded bg-sage-800 text-[10px] font-mono text-emerald-300">ResNet18 Backbone</div>
+                  <span class="text-sage-400 font-mono">→</span>
+                  <div class="p-1 rounded bg-charcoal-900 text-[10px] font-mono text-amber-300">Regression Head</div>
+                </div>
+                <div class="text-[11px] font-mono text-sage-300">PyTorch Vision + MERN UI</div>
+              </div>
+              <div class="p-6">
+                <span class="text-[11px] font-mono uppercase px-2.5 py-0.5 rounded-full bg-ivory-200 text-charcoal-700 font-semibold">AI &amp; Intelligent Systems</span>
+                <h3 class="text-xl font-serif font-bold text-sage-800 dark:text-ivory-50 mt-2 mb-2">Food Recognition &amp; Calorie AI</h3>
+                <p class="text-sm text-charcoal-500 dark:text-darkbg-muted leading-relaxed font-sans mb-4">
+                  An AI-powered food recognition application that identifies food items from images and estimates their calorie content using deep learning.
+                </p>
+                <div class="flex flex-wrap gap-1.5 pt-3 border-t border-ivory-200">
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-ivory-100 border border-ivory-300">Python</span>
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-ivory-100 border border-ivory-300">PyTorch</span>
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-ivory-100 border border-ivory-300">ResNet18</span>
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-ivory-100 border border-ivory-300">MERN</span>
+                </div>
+
+                <!-- Prominent Repository Link Row -->
+                <div class="mt-3.5 pt-2.5 border-t border-ivory-200 dark:border-darkbg-border flex items-center justify-between text-xs font-mono">
+                  <span class="text-charcoal-400 dark:text-darkbg-muted text-[11px]">Repository:</span>
+                  <a href="https://github.com/shreya-a12/Foor_Req.git" target="_blank" rel="noopener noreferrer" class="text-sage-700 dark:text-sage-300 font-semibold hover:underline inline-flex items-center gap-1 text-[11px] truncate max-w-[220px]" title="https://github.com/shreya-a12/Foor_Req.git">
+                    <span>shreya-a12/Foor_Req.git</span>
+                    <svg class="w-3 h-3 stroke-current fill-none flex-shrink-0" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="px-6 py-4 border-t border-ivory-100 dark:border-darkbg-border flex flex-wrap items-center justify-between gap-3 bg-ivory-50/50 dark:bg-darkbg-surface/50">
+              <button onclick="openProjectModal('food-recognition')" class="text-xs font-mono font-semibold text-sage-700 dark:text-sage-300 hover:underline inline-flex items-center gap-1">
+                <span>View Architecture</span>
+                <span>→</span>
+              </button>
+              <a href="https://github.com/shreya-a12/Foor_Req.git" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-sage-800 hover:bg-sage-900 dark:bg-sage-700 dark:hover:bg-sage-600 text-ivory-50 text-xs font-mono font-semibold shadow-soft-sm transition-all hover:scale-105" title="Open GitHub Repository: https://github.com/shreya-a12/Foor_Req.git">
+                <svg class="w-3.5 h-3.5 fill-current flex-shrink-0" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub Repo ↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 4: EcoFinds -->
+          <div class="flex flex-col justify-between bg-white dark:bg-darkbg-card rounded-2xl border border-ivory-300 dark:border-darkbg-border shadow-soft-sm hover:border-sage-400 transition-all duration-300 overflow-hidden">
+            <div>
+              <div class="h-44 bg-gradient-to-br from-[#1F2B23] to-[#1A261F] p-5 text-ivory-100 flex flex-col justify-between">
+                <div class="flex justify-between items-center text-xs font-mono">
+                  <span class="px-2 py-0.5 rounded bg-sage-800 border border-sage-600">Circular Economy</span>
+                  <span class="text-emerald-300 font-bold">MERN Platform</span>
+                </div>
+                <div class="flex items-center justify-center gap-3 my-auto">
+                  <div class="px-3 py-1.5 rounded bg-charcoal-900 text-xs">Listing</div>
+                  <span class="font-bold text-sage-300">⇄</span>
+                  <div class="px-3 py-1.5 rounded bg-charcoal-900 text-xs">Exchange</div>
+                </div>
+                <div class="text-[11px] font-mono text-sage-300">Sustainable Second-Hand Marketplace</div>
+              </div>
+              <div class="p-6">
+                <span class="text-[11px] font-mono uppercase px-2.5 py-0.5 rounded-full bg-ivory-200 text-charcoal-700 font-semibold">Full Stack Web</span>
+                <h3 class="text-xl font-serif font-bold text-sage-800 dark:text-ivory-50 mt-2 mb-2">EcoFinds</h3>
+                <p class="text-sm text-charcoal-500 dark:text-darkbg-muted leading-relaxed font-sans mb-4">
+                  A sustainable second-hand marketplace that encourages reuse and responsible consumption by allowing users to discover and exchange pre-owned products.
+                </p>
+                <div class="flex flex-wrap gap-1.5 pt-3 border-t border-ivory-200">
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-ivory-100 border border-ivory-300">React</span>
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-ivory-100 border border-ivory-300">Node.js</span>
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-ivory-100 border border-ivory-300">Express</span>
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-ivory-100 border border-ivory-300">MongoDB</span>
+                </div>
+
+                <!-- Prominent Repository Link Row -->
+                <div class="mt-3.5 pt-2.5 border-t border-ivory-200 dark:border-darkbg-border flex items-center justify-between text-xs font-mono">
+                  <span class="text-charcoal-400 dark:text-darkbg-muted text-[11px]">Repository:</span>
+                  <a href="https://github.com/shreya-a12/Eco-Finds.git" target="_blank" rel="noopener noreferrer" class="text-sage-700 dark:text-sage-300 font-semibold hover:underline inline-flex items-center gap-1 text-[11px] truncate max-w-[220px]" title="https://github.com/shreya-a12/Eco-Finds.git">
+                    <span>shreya-a12/Eco-Finds.git</span>
+                    <svg class="w-3 h-3 stroke-current fill-none flex-shrink-0" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="px-6 py-4 border-t border-ivory-100 dark:border-darkbg-border flex flex-wrap items-center justify-between gap-3 bg-ivory-50/50 dark:bg-darkbg-surface/50">
+              <button onclick="openProjectModal('ecofinds')" class="text-xs font-mono font-semibold text-sage-700 dark:text-sage-300 hover:underline inline-flex items-center gap-1">
+                <span>View Architecture</span>
+                <span>→</span>
+              </button>
+              <a href="https://github.com/shreya-a12/Eco-Finds.git" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-sage-800 hover:bg-sage-900 dark:bg-sage-700 dark:hover:bg-sage-600 text-ivory-50 text-xs font-mono font-semibold shadow-soft-sm transition-all hover:scale-105" title="Open GitHub Repository: https://github.com/shreya-a12/Eco-Finds.git">
+                <svg class="w-3.5 h-3.5 fill-current flex-shrink-0" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub Repo ↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 5: Mental Health Chatbot -->
+          <div class="flex flex-col justify-between bg-white dark:bg-darkbg-card rounded-2xl border border-ivory-300 dark:border-darkbg-border shadow-soft-sm hover:border-sage-400 transition-all duration-300 overflow-hidden">
+            <div>
+              <div class="h-44 bg-gradient-to-br from-[#1C2822] to-[#15211B] p-5 text-ivory-100 flex flex-col justify-between">
+                <div class="flex justify-between items-center text-xs font-mono">
+                  <span class="px-2 py-0.5 rounded bg-sage-800 border border-sage-600">NLP Dialog</span>
+                  <span class="text-emerald-400 font-bold">TF-IDF Vector</span>
+                </div>
+                <div class="space-y-1.5 my-auto text-[11px]">
+                  <div class="p-1 rounded bg-sage-800/80">User: "Strategies for study burnout..."</div>
+                  <div class="p-1 rounded bg-emerald-900/60 pl-3">NLP: Vector Match → Empathetic Reply</div>
+                </div>
+                <div class="text-[11px] font-mono text-sage-300">Scikit-learn + NLTK Cosine Sim</div>
+              </div>
+              <div class="p-6">
+                <span class="text-[11px] font-mono uppercase px-2.5 py-0.5 rounded-full bg-ivory-200 text-charcoal-700 font-semibold">AI &amp; Intelligent Systems</span>
+                <h3 class="text-xl font-serif font-bold text-sage-800 dark:text-ivory-50 mt-2 mb-2">Mental Health Chatbot</h3>
+                <p class="text-sm text-charcoal-500 dark:text-darkbg-muted leading-relaxed font-sans mb-4">
+                  A conversational chatbot that uses Natural Language Processing techniques to understand user messages and generate relevant responses.
+                </p>
+                <div class="flex flex-wrap gap-1.5 pt-3 border-t border-ivory-200">
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-ivory-100 border border-ivory-300">Python</span>
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-ivory-100 border border-ivory-300">NLP</span>
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-ivory-100 border border-ivory-300">NLTK</span>
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-ivory-100 border border-ivory-300">Scikit-learn</span>
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-ivory-100 border border-ivory-300">TF-IDF</span>
+                </div>
+
+                <!-- Prominent Repository Link Row -->
+                <div class="mt-3.5 pt-2.5 border-t border-ivory-200 dark:border-darkbg-border flex items-center justify-between text-xs font-mono">
+                  <span class="text-charcoal-400 dark:text-darkbg-muted text-[11px]">Repository:</span>
+                  <a href="https://github.com/shreya-a12" target="_blank" rel="noopener noreferrer" class="text-sage-700 dark:text-sage-300 font-semibold hover:underline inline-flex items-center gap-1 text-[11px] truncate max-w-[220px]" title="https://github.com/shreya-a12">
+                    <span>shreya-a12 (GitHub Profile)</span>
+                    <svg class="w-3 h-3 stroke-current fill-none flex-shrink-0" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="px-6 py-4 border-t border-ivory-100 dark:border-darkbg-border flex flex-wrap items-center justify-between gap-3 bg-ivory-50/50 dark:bg-darkbg-surface/50">
+              <button onclick="openProjectModal('mental-health')" class="text-xs font-mono font-semibold text-sage-700 dark:text-sage-300 hover:underline inline-flex items-center gap-1">
+                <span>View Architecture</span>
+                <span>→</span>
+              </button>
+              <a href="https://github.com/shreya-a12" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-sage-800 hover:bg-sage-900 dark:bg-sage-700 dark:hover:bg-sage-600 text-ivory-50 text-xs font-mono font-semibold shadow-soft-sm transition-all hover:scale-105" title="Open GitHub Profile: https://github.com/shreya-a12">
+                <svg class="w-3.5 h-3.5 fill-current flex-shrink-0" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub Profile ↗</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS & EDUCATION SECTION -->
+    <section id="achievements" class="py-20 lg:py-28 bg-ivory-200/50 dark:bg-darkbg-card/40 border-y border-ivory-300 dark:border-darkbg-border">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-12 max-w-3xl">
+          <div class="inline-flex items-center gap-2 mb-3 text-xs tracking-widest font-mono uppercase text-sage-600 dark:text-sage-300 font-semibold">
+            <span class="text-charcoal-400 font-bold">04</span>
+            <span>/</span>
+            <span>EXCELLENCE &amp; EDUCATION</span>
+            <span class="w-6 h-[1.5px] bg-sage-400 inline-block ml-1"></span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold tracking-tight text-sage-800 dark:text-ivory-50 mb-4">
+            Achievements &amp; Education
+          </h2>
+          <p class="text-base sm:text-lg text-charcoal-400 dark:text-darkbg-muted leading-relaxed font-sans">
+            Milestones that mark my academic dedication, competitive problem solving, and technical journey.
+          </p>
+        </div>
+
+        <!-- Academic Banner -->
+        <div class="p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-sage-800 via-sage-900 to-[#192A22] text-ivory-100 shadow-soft-md border border-sage-700 mb-12 flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <div class="flex items-start gap-4">
+            <div class="p-3.5 rounded-2xl bg-amber-400/20 text-amber-300 flex-shrink-0">
+              <i data-lucide="trophy" class="w-8 h-8"></i>
+            </div>
+            <div>
+              <span class="text-[11px] font-mono uppercase px-2 py-0.5 rounded bg-amber-400/20 text-amber-200 font-semibold">Academic Record</span>
+              <h3 class="text-2xl sm:text-3xl font-serif font-bold text-ivory-50 mt-1">Department Topper in Every Semester</h3>
+              <p class="text-sm text-sage-200 font-sans mt-1 max-w-2xl">
+                Consistently ranked Rank 1 across all 6 semesters of B.E. in Artificial Intelligence &amp; Data Science at CMRIT Bengaluru, with a cumulative CGPA of 9.53 / 10.0.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 flex-shrink-0">
+            <div class="px-5 py-3 rounded-2xl bg-sage-950/60 border border-sage-700/60 text-center">
+              <div class="text-2xl font-serif font-bold text-amber-300">9.53</div>
+              <div class="text-[10px] font-mono text-sage-300 uppercase">CGPA</div>
+            </div>
+            <div class="px-5 py-3 rounded-2xl bg-sage-950/60 border border-sage-700/60 text-center">
+              <div class="text-2xl font-serif font-bold text-emerald-300">6 / 6</div>
+              <div class="text-[10px] font-mono text-sage-300 uppercase">Semesters #1</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          <div class="lg:col-span-6 space-y-6">
+            <div class="p-6 rounded-2xl bg-white dark:bg-darkbg-card border border-ivory-300 dark:border-darkbg-border shadow-soft-sm">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="p-2.5 rounded-xl bg-ivory-100 text-sage-700"><i data-lucide="graduation-cap" class="w-5 h-5"></i></div>
+                <div>
+                  <h4 class="text-xs font-mono uppercase text-sage-700 font-bold">Degree &amp; Institution</h4>
+                  <h3 class="font-serif font-bold text-lg text-sage-800 dark:text-ivory-50">Bachelor of Engineering (B.E.)</h3>
+                </div>
+              </div>
+              <div class="space-y-2 text-sm text-charcoal-600 dark:text-ivory-200">
+                <div class="flex justify-between text-xs font-mono border-b border-ivory-200 pb-2">
+                  <span class="font-semibold text-sage-700">Artificial Intelligence and Data Science</span>
+                  <span>July 2027</span>
+                </div>
+                <p class="text-xs text-charcoal-500 font-sans leading-relaxed">
+                  CMR Institute of Technology, Bengaluru. Coursework highlights: Data Structures, Algorithms, Machine Learning, Operating Systems, Database Management Systems.
+                </p>
+              </div>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-white dark:bg-darkbg-card border border-ivory-300 dark:border-darkbg-border shadow-soft-sm">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="p-2.5 rounded-xl bg-ivory-100 text-sage-700"><i data-lucide="users" class="w-5 h-5"></i></div>
+                <div>
+                  <h4 class="text-xs font-mono uppercase text-sage-700 font-bold">Technical Communities</h4>
+                  <h3 class="font-serif font-bold text-lg text-sage-800 dark:text-ivory-50">Clubs &amp; Coding Practice</h3>
+                </div>
+              </div>
+              <div class="space-y-3">
+                <div class="p-3 rounded-xl bg-ivory-50 dark:bg-darkbg-surface border border-ivory-200 text-xs">
+                  <span class="font-bold text-sage-800 dark:text-ivory-50 block mb-0.5">HackerEarth Technical Club</span>
+                  <p class="text-charcoal-500 font-sans">Active member participating in algorithmic programming sessions and peer code reviews.</p>
+                </div>
+                <div class="p-3 rounded-xl bg-ivory-50 dark:bg-darkbg-surface border border-ivory-200 text-xs">
+                  <span class="font-bold text-sage-800 dark:text-ivory-50 block mb-0.5">CodeChef Community</span>
+                  <p class="text-charcoal-500 font-sans">Regularly practicing data structures and algorithmic challenges.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 space-y-4">
+            <h3 class="font-serif font-bold text-xl text-sage-800 dark:text-ivory-50 mb-2">Verified Certifications</h3>
+            
+            <div class="p-5 rounded-2xl bg-white dark:bg-darkbg-card border border-ivory-300 dark:border-darkbg-border shadow-soft-sm">
+              <div class="flex justify-between items-start mb-1">
+                <h4 class="font-serif font-bold text-base text-sage-800 dark:text-ivory-50">Data Structures</h4>
+                <span class="text-xs font-mono px-2 py-0.5 rounded bg-ivory-100">Department Level — CMRIT</span>
+              </div>
+              <p class="text-xs text-charcoal-500 font-sans mb-2">Evaluation in linear/non-linear data structures and algorithmic complexity.</p>
+              <div class="text-[11px] font-mono text-emerald-700 flex items-center gap-1"><i data-lucide="check-circle-2" class="w-3.5 h-3.5"></i> Coursework Completed</div>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-white dark:bg-darkbg-card border border-ivory-300 dark:border-darkbg-border shadow-soft-sm">
+              <div class="flex justify-between items-start mb-1">
+                <h4 class="font-serif font-bold text-base text-sage-800 dark:text-ivory-50">Algorithms</h4>
+                <span class="text-xs font-mono px-2 py-0.5 rounded bg-ivory-100">Udemy</span>
+              </div>
+              <p class="text-xs text-charcoal-500 font-sans mb-2">Comprehensive course covering dynamic programming, greedy methods, and graph traversals.</p>
+              <div class="text-[11px] font-mono text-emerald-700 flex items-center gap-1"><i data-lucide="check-circle-2" class="w-3.5 h-3.5"></i> Coursework Completed</div>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-white dark:bg-darkbg-card border border-ivory-300 dark:border-darkbg-border shadow-soft-sm">
+              <div class="flex justify-between items-start mb-1">
+                <h4 class="font-serif font-bold text-base text-sage-800 dark:text-ivory-50">MERN Stack</h4>
+                <span class="text-xs font-mono px-2 py-0.5 rounded bg-ivory-100">Infosys Springboard</span>
+              </div>
+              <p class="text-xs text-charcoal-500 font-sans mb-2">Full stack web application development with MongoDB, Express, React, and Node.js.</p>
+              <div class="text-[11px] font-mono text-emerald-700 flex items-center gap-1"><i data-lucide="check-circle-2" class="w-3.5 h-3.5"></i> Coursework Completed</div>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-white dark:bg-darkbg-card border border-ivory-300 dark:border-darkbg-border shadow-soft-sm">
+              <div class="flex justify-between items-start mb-1">
+                <h4 class="font-serif font-bold text-base text-sage-800 dark:text-ivory-50">Spring Boot</h4>
+                <span class="text-xs font-mono px-2 py-0.5 rounded bg-ivory-100">Infosys Springboard</span>
+              </div>
+              <p class="text-xs text-charcoal-500 font-sans mb-2">Enterprise Java backend development, RESTful APIs, and dependency injection.</p>
+              <div class="text-[11px] font-mono text-emerald-700 flex items-center gap-1"><i data-lucide="check-circle-2" class="w-3.5 h-3.5"></i> Coursework Completed</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEYOND DEVELOPMENT SECTION -->
+    <section id="beyond" class="py-20 lg:py-28 bg-ivory-100 dark:bg-darkbg-base transition-colors duration-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-12 max-w-3xl">
+          <div class="inline-flex items-center gap-2 mb-3 text-xs tracking-widest font-mono uppercase text-sage-600 dark:text-sage-300 font-semibold">
+            <span class="text-charcoal-400 font-bold">05</span>
+            <span>/</span>
+            <span>EXPLORATION</span>
+            <span class="w-6 h-[1.5px] bg-sage-400 inline-block ml-1"></span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold tracking-tight text-sage-800 dark:text-ivory-50 mb-4">
+            Beyond Development
+          </h2>
+          <p class="text-base sm:text-lg text-charcoal-400 dark:text-darkbg-muted leading-relaxed font-sans">
+            Exploring emerging AI-powered tools, visual workflows, and interactive machine learning.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Langflow -->
+          <div class="p-8 rounded-3xl bg-white dark:bg-darkbg-card border border-ivory-300 dark:border-darkbg-border shadow-soft-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="p-3 rounded-2xl bg-ivory-100 text-sage-700"><i data-lucide="network" class="w-6 h-6"></i></div>
+                <span class="text-xs font-mono px-3 py-1 rounded-full bg-sage-50 text-sage-800 border border-sage-300">Actively Exploring</span>
+              </div>
+              <h3 class="text-2xl font-serif font-bold text-sage-800 dark:text-ivory-50 mb-1">Langflow</h3>
+              <p class="text-xs font-mono text-sage-600 font-semibold mb-4">Visual AI Workflow Builder</p>
+              <p class="text-sm text-charcoal-500 dark:text-darkbg-muted font-sans leading-relaxed mb-6">
+                Exploring visual workflows for building AI applications, node-based prompt chaining, and rapid pipeline testing for conversational and retrieval agents.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-ivory-200 flex flex-wrap gap-2">
+              <span class="px-2.5 py-1 text-xs font-mono rounded bg-ivory-100 border border-ivory-300">Visual Workflows</span>
+              <span class="px-2.5 py-1 text-xs font-mono rounded bg-ivory-100 border border-ivory-300">LLM Pipelines</span>
+              <span class="px-2.5 py-1 text-xs font-mono rounded bg-ivory-100 border border-ivory-300">Agentic Prototyping</span>
+            </div>
+          </div>
+
+          <!-- Google Teachable Machine -->
+          <div class="p-8 rounded-3xl bg-white dark:bg-darkbg-card border border-ivory-300 dark:border-darkbg-border shadow-soft-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="p-3 rounded-2xl bg-ivory-100 text-sage-700"><i data-lucide="eye" class="w-6 h-6"></i></div>
+                <span class="text-xs font-mono px-3 py-1 rounded-full bg-sage-50 text-sage-800 border border-sage-300">Actively Exploring</span>
+              </div>
+              <h3 class="text-2xl font-serif font-bold text-sage-800 dark:text-ivory-50 mb-1">Google Teachable Machine</h3>
+              <p class="text-xs font-mono text-sage-600 font-semibold mb-4">Interactive ML &amp; Prototyping</p>
+              <p class="text-sm text-charcoal-500 dark:text-darkbg-muted font-sans leading-relaxed mb-6">
+                Exploring interactive machine learning and image classification for intuitive real-time model training, fast dataset labeling, and browser-based vision experiments.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-ivory-200 flex flex-wrap gap-2">
+              <span class="px-2.5 py-1 text-xs font-mono rounded bg-ivory-100 border border-ivory-300">Interactive ML</span>
+              <span class="px-2.5 py-1 text-xs font-mono rounded bg-ivory-100 border border-ivory-300">Image Classification</span>
+              <span class="px-2.5 py-1 text-xs font-mono rounded bg-ivory-100 border border-ivory-300">Edge Prototyping</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20 lg:py-28 bg-ivory-200/50 dark:bg-darkbg-card/40 border-t border-ivory-300 dark:border-darkbg-border">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-12 max-w-3xl">
+          <div class="inline-flex items-center gap-2 mb-3 text-xs tracking-widest font-mono uppercase text-sage-600 dark:text-sage-300 font-semibold">
+            <span class="text-charcoal-400 font-bold">06</span>
+            <span>/</span>
+            <span>GET IN TOUCH</span>
+            <span class="w-6 h-[1.5px] bg-sage-400 inline-block ml-1"></span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold tracking-tight text-sage-800 dark:text-ivory-50 mb-4">
+            Let's Connect
+          </h2>
+          <p class="text-base sm:text-lg text-charcoal-400 dark:text-darkbg-muted leading-relaxed font-sans">
+            Have an opportunity, collaboration idea, or just want to connect? Feel free to reach out.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          <div class="lg:col-span-5 space-y-6">
+            <div class="p-8 rounded-3xl bg-white dark:bg-darkbg-card border border-ivory-300 dark:border-darkbg-border shadow-soft-sm space-y-6">
+              <h3 class="font-serif font-bold text-2xl text-sage-800 dark:text-ivory-50">Contact Information</h3>
+              <p class="text-sm text-charcoal-500 dark:text-darkbg-muted font-sans leading-relaxed">
+                Open to software developer internship opportunities, collaborative projects, and technical discussions.
+              </p>
+
+              <!-- Copy Email Card -->
+              <div class="p-4 rounded-2xl bg-ivory-100 dark:bg-darkbg-surface border border-ivory-300 flex items-center justify-between">
+                <div>
+                  <div class="text-[10px] font-mono uppercase text-charcoal-400">Email Address</div>
+                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=singhsharaya00@gmail.com" target="_blank" rel="noopener noreferrer" class="text-sm font-mono font-medium hover:text-sage-700 underline text-sage-800 dark:text-sage-300">singhsharaya00@gmail.com</a>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=singhsharaya00@gmail.com" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-xl bg-sage-800 text-ivory-50 text-xs font-mono font-medium hover:bg-sage-900 transition-colors shadow-soft-sm" title="Compose Email in Gmail">
+                    Compose
+                  </a>
+                  <button onclick="copyEmail()" class="p-2 rounded-xl bg-white border border-ivory-300 text-charcoal-600 hover:border-sage-400" title="Copy email">
+                    <i data-lucide="copy" class="w-4 h-4"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Location -->
+              <div class="flex items-center gap-3 text-xs sm:text-sm text-charcoal-600 dark:text-ivory-200">
+                <div class="p-2.5 rounded-xl bg-ivory-100 text-sage-700"><i data-lucide="map-pin" class="w-5 h-5"></i></div>
+                <div>
+                  <div class="text-[10px] font-mono uppercase text-charcoal-400">Location</div>
+                  <span class="font-sans font-medium">Bengaluru, Karnataka, India</span>
+                </div>
+              </div>
+
+              <!-- Profiles -->
+              <div class="pt-4 border-t border-ivory-200 flex items-center gap-3">
+                <a href="https://github.com/shreya-a12" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-ivory-100 border border-ivory-300 text-xs font-mono font-medium text-charcoal-800 hover:bg-ivory-200">
+                  <i data-lucide="github" class="w-4 h-4"></i>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/shreya-singh-1bb590328/" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-ivory-100 border border-ivory-300 text-xs font-mono font-medium text-charcoal-800 hover:bg-ivory-200">
+                  <i data-lucide="linkedin" class="w-4 h-4"></i>
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="lg:col-span-7">
+            <div class="p-8 rounded-3xl bg-white dark:bg-darkbg-card border border-ivory-300 dark:border-darkbg-border shadow-soft-sm">
+              <h3 class="font-serif font-bold text-2xl text-sage-800 dark:text-ivory-50 mb-6">Send a Message</h3>
+              
+              <form id="contactForm" onsubmit="handleContactSubmit(event)" class="space-y-5">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <div>
+                    <label class="block text-xs font-mono uppercase text-charcoal-600 mb-1.5">Name *</label>
+                    <input type="text" id="formName" required placeholder="Your Name" class="w-full px-4 py-3 rounded-xl bg-ivory-50 dark:bg-darkbg-base border border-ivory-300 text-sm focus:outline-none focus:border-sage-400">
+                  </div>
+                  <div>
+                    <label class="block text-xs font-mono uppercase text-charcoal-600 mb-1.5">Email *</label>
+                    <input type="email" id="formEmail" required placeholder="your.email@company.com" class="w-full px-4 py-3 rounded-xl bg-ivory-50 dark:bg-darkbg-base border border-ivory-300 text-sm focus:outline-none focus:border-sage-400">
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-mono uppercase text-charcoal-600 mb-1.5">Subject *</label>
+                  <input type="text" id="formSubject" required placeholder="Subject / Opportunity" class="w-full px-4 py-3 rounded-xl bg-ivory-50 dark:bg-darkbg-base border border-ivory-300 text-sm focus:outline-none focus:border-sage-400">
+                </div>
+
+                <div>
+                  <label class="block text-xs font-mono uppercase text-charcoal-600 mb-1.5">Message *</label>
+                  <textarea id="formMessage" rows="4" required placeholder="Your message here..." class="w-full px-4 py-3 rounded-xl bg-ivory-50 dark:bg-darkbg-base border border-ivory-300 text-sm focus:outline-none focus:border-sage-400 resize-none"></textarea>
+                </div>
+
+                <button type="submit" class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full text-sm font-mono font-semibold bg-sage-800 hover:bg-sage-900 text-ivory-50 shadow-soft-sm transition-all">
+                  <i data-lucide="send" class="w-4 h-4"></i>
+                  <span>Send Message</span>
+                </button>
+              </form>
+
+              <div id="formNotice" class="hidden mt-6 p-4 rounded-2xl bg-sage-50 dark:bg-darkbg-surface border border-sage-300 flex items-start gap-3">
+                <i data-lucide="info" class="w-5 h-5 text-sage-700 flex-shrink-0 mt-0.5"></i>
+                <p class="text-xs text-charcoal-600 font-sans leading-relaxed">
+                  Message input validated! In this static portfolio build, email backend integration (e.g., Formspree or EmailJS) is not linked yet. To connect directly, please copy Shreya's email or message on LinkedIn!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-ivory-200/60 dark:bg-darkbg-card border-t border-ivory-300 dark:border-darkbg-border text-charcoal-700 dark:text-ivory-200 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-charcoal-400 dark:text-darkbg-muted">
+        <div>
+          © <span id="currentYear"></span> Shreya Singh • B.E. AI &amp; Data Science (9.53 CGPA), CMRIT Bengaluru.
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="#hero" class="text-sage-700 dark:text-sage-300 font-semibold hover:underline">Back to Top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- RESUME MODAL -->
+  <div id="resumeModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-5 bg-charcoal-900/80 backdrop-blur-md">
+    <div class="relative w-full max-w-5xl h-[94vh] flex flex-col bg-white dark:bg-darkbg-card rounded-2xl shadow-2xl border border-ivory-300 dark:border-darkbg-border overflow-hidden">
+      <!-- Modal Header -->
+      <div class="flex flex-wrap items-center justify-between gap-3 px-5 py-3.5 border-b border-ivory-300 dark:border-darkbg-border bg-ivory-100 dark:bg-darkbg-surface">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-full overflow-hidden border border-sage-400 flex-shrink-0">
+            <img src="shreya-photo.jpg" alt="Shreya Singh" class="w-full h-full object-cover" onerror="this.style.display='none'">
+          </div>
+          <div>
+            <h3 class="font-serif font-bold text-base text-sage-800 dark:text-ivory-50 flex items-center gap-2">
+              <span>Shreya Singh — Official Resume</span>
+              <span class="text-[10px] font-mono font-semibold px-2 py-0.5 rounded bg-sage-200 dark:bg-sage-900/70 text-sage-900 dark:text-sage-200">PDF Original</span>
+            </h3>
+            <p class="text-[11px] font-mono text-charcoal-500 dark:text-darkbg-muted">B.E. AI &amp; Data Science (9.53 CGPA) • CMRIT Bengaluru</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <!-- View in full tab -->
+          <a href="public/resume.pdf" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-mono font-medium text-charcoal-700 dark:text-ivory-200 hover:bg-ivory-200 dark:hover:bg-darkbg-border border border-ivory-300 dark:border-darkbg-border transition-colors" title="Open PDF in new browser tab">
+            <svg class="w-3.5 h-3.5 stroke-current fill-none" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            <span>Full Window ↗</span>
+          </a>
+
+          <!-- Download Button -->
+          <a href="public/resume.pdf" download="Shreya_Singh_Resume.pdf" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg text-xs font-mono font-semibold bg-emerald-800 hover:bg-emerald-900 text-ivory-50 shadow-soft-sm transition-all border border-emerald-700">
+            <svg class="w-3.5 h-3.5 stroke-current fill-none" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            <span>Download PDF</span>
+          </a>
+
+          <!-- Close Modal -->
+          <button onclick="closeResumeModal()" class="p-2 rounded-lg bg-ivory-200 dark:bg-darkbg-border hover:bg-ivory-300 text-charcoal-600 dark:text-ivory-200 transition-colors" title="Close (ESC)">
+            <svg class="w-4 h-4 stroke-current fill-none" stroke-width="2" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Tab Strip: Embedded PDF (Default) vs Structured Text -->
+      <div class="px-5 py-2 bg-ivory-200/60 dark:bg-darkbg-card border-b border-ivory-300 dark:border-darkbg-border flex items-center justify-between">
+        <div class="flex items-center gap-1.5">
+          <button id="resumeTabPdfBtn" onclick="switchResumeTab('pdf')" class="px-3.5 py-1.5 rounded-lg text-xs font-mono font-bold bg-sage-800 text-white shadow-soft-sm transition-all">
+            <span>📄 Original PDF Document</span>
+          </button>
+          <button id="resumeTabTextBtn" onclick="switchResumeTab('text')" class="px-3.5 py-1.5 rounded-lg text-xs font-mono font-medium text-charcoal-600 dark:text-ivory-300 hover:bg-ivory-300 dark:hover:bg-darkbg-surface transition-all">
+            <span>📝 Text Overview</span>
+          </button>
+        </div>
+        <div class="text-[11px] font-mono text-charcoal-400 dark:text-darkbg-muted hidden md:block">
+          Use PDF toolbar controls to Zoom, Print or Save
+        </div>
+      </div>
+
+      <!-- View 1: THE ACTUAL EMBEDDED PDF (Active by Default) -->
+      <div id="resumePdfView" class="w-full flex-1 bg-charcoal-900 relative overflow-hidden">
+        <iframe 
+          src="public/resume.pdf#view=FitH&toolbar=1&navpanes=0" 
+          class="w-full h-full border-0" 
+          title="Shreya Singh Original Resume PDF"
+        >
+          <div class="h-full flex flex-col items-center justify-center p-8 text-center text-ivory-100 bg-charcoal-900">
+            <p class="text-sm font-sans mb-3">Your browser doesn't support embedded inline PDFs.</p>
+            <a href="public/resume.pdf" target="_blank" class="px-4 py-2 rounded-lg bg-sage-800 text-white font-mono text-xs font-bold underline">Click here to open the PDF directly ↗</a>
+          </div>
+        </iframe>
+      </div>
+
+      <!-- View 2: Accessible Structured Text View -->
+      <div id="resumeTextView" class="hidden p-6 sm:p-10 overflow-y-auto space-y-6 bg-ivory-50 dark:bg-darkbg-base text-xs sm:text-sm text-charcoal-700 dark:text-ivory-200 flex-1">
+        
+        <!-- Header Info -->
+        <div class="border-b border-ivory-300 dark:border-darkbg-border pb-5 flex flex-col sm:flex-row justify-between gap-4">
+          <div>
+            <h1 class="text-3xl font-serif font-bold text-sage-900 dark:text-ivory-50">SHREYA SINGH</h1>
+            <p class="text-sm font-sans font-medium text-sage-700 dark:text-sage-300 mt-0.5">Software Developer | Final Year AI &amp; Data Science Student</p>
+            <p class="text-xs text-charcoal-500 dark:text-darkbg-muted mt-1">AECS Layout, Bengaluru, Karnataka - 560037</p>
+          </div>
+          <div class="text-xs font-mono space-y-1 text-charcoal-600 dark:text-ivory-300 sm:text-right">
+            <div>Mobile: <a href="tel:+916203825753" class="hover:underline font-semibold">+91 6203825753</a></div>
+            <div>Email: <a href="mailto:singhsharya00@gmail.com" class="text-sage-700 dark:text-sage-300 hover:underline">singhsharya00@gmail.com</a> | <a href="mailto:shm23ainds@cmrit.ac.in" class="hover:underline">shm23ainds@cmrit.ac.in</a></div>
+            <div>GitHub: <a href="https://github.com/shreya-a12" target="_blank" rel="noopener noreferrer" class="text-sage-700 dark:text-sage-300 hover:underline">github.com/shreya-a12 ↗</a></div>
+            <div>LinkedIn: <a href="https://www.linkedin.com/in/shreya-singh-1bb590328/" target="_blank" rel="noopener noreferrer" class="text-sage-700 dark:text-sage-300 hover:underline">linkedin.com/in/shreya-singh-1bb590328 ↗</a></div>
+          </div>
+        </div>
+
+        <!-- Career Objective -->
+        <div>
+          <h2 class="font-mono text-xs uppercase tracking-wider font-bold text-sage-700 dark:text-sage-300 mb-2">Career Objective</h2>
+          <p class="text-xs sm:text-sm leading-relaxed text-charcoal-600 dark:text-darkbg-muted bg-white dark:bg-darkbg-card p-4 rounded-xl border border-ivory-200 dark:border-darkbg-border">
+            As an Artificial Intelligence and Data Science undergraduate passionate about developing innovative software solutions and intelligent applications, I am seeking an opportunity to apply my strong foundation in programming, data structures, backend development, and machine learning. I aim to contribute to software development, RESTful API integration, and database-driven applications while building efficient, scalable solutions and continuously expanding my technical expertise in software engineering, application security, and emerging technologies.
+          </p>
+        </div>
+
+        <!-- Education -->
+        <div>
+          <h2 class="font-mono text-xs uppercase tracking-wider font-bold text-sage-700 dark:text-sage-300 mb-2">Education Qualifications</h2>
+          <div class="space-y-2.5">
+            <div class="p-4 rounded-xl bg-white dark:bg-darkbg-card border border-ivory-200 dark:border-darkbg-border">
+              <div class="flex flex-wrap justify-between items-center font-bold text-sage-800 dark:text-ivory-50">
+                <span>Bachelor of Engineering – Artificial Intelligence &amp; Data Science</span>
+                <span class="text-xs font-mono text-charcoal-400">2023 – 2027 (Pursuing)</span>
+              </div>
+              <div class="text-xs text-charcoal-600 dark:text-darkbg-muted mt-0.5">CMR Institute of Technology, Bengaluru</div>
+              <div class="pt-2 flex flex-wrap gap-2 text-xs font-mono">
+                <span class="px-2.5 py-0.5 rounded bg-emerald-50 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 border border-emerald-300 font-bold">★ CGPA: 9.53 / 10.0</span>
+                <span class="px-2.5 py-0.5 rounded bg-sage-50 dark:bg-sage-950/60 text-sage-800 dark:text-sage-300 border border-sage-300 font-semibold">Department Topper across all 6 semesters</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+              <div class="p-3.5 rounded-xl bg-white dark:bg-darkbg-card border border-ivory-200 dark:border-darkbg-border">
+                <div class="font-bold text-xs text-sage-800 dark:text-ivory-50">12th Standard – Science (78.4%)</div>
+                <div class="text-[11px] text-charcoal-500 dark:text-darkbg-muted">Mahaviri Saraswati Vidya Mandir, Siwan (2022)</div>
+              </div>
+              <div class="p-3.5 rounded-xl bg-white dark:bg-darkbg-card border border-ivory-200 dark:border-darkbg-border">
+                <div class="font-bold text-xs text-sage-800 dark:text-ivory-50">10th Standard (93.66%)</div>
+                <div class="text-[11px] text-charcoal-500 dark:text-darkbg-muted">Mahaviri Saraswati Vidya Mandir, Siwan (2020)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technical Skills -->
+        <div>
+          <h2 class="font-mono text-xs uppercase tracking-wider font-bold text-sage-700 dark:text-sage-300 mb-2">Technical Skills</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+            <div class="p-3 rounded-lg bg-white dark:bg-darkbg-card border border-ivory-200 dark:border-darkbg-border">
+              <strong class="font-mono text-sage-800 dark:text-ivory-50">Programming Languages:</strong> Java, C, Python, Scala
+            </div>
+            <div class="p-3 rounded-lg bg-white dark:bg-darkbg-card border border-ivory-200 dark:border-darkbg-border">
+              <strong class="font-mono text-sage-800 dark:text-ivory-50">Frameworks:</strong> React, Node.js, Express.js, RESTful API Development
+            </div>
+            <div class="p-3 rounded-lg bg-white dark:bg-darkbg-card border border-ivory-200 dark:border-darkbg-border">
+              <strong class="font-mono text-sage-800 dark:text-ivory-50">AI/ML &amp; Vision:</strong> Machine Learning, Deep Learning, PyTorch, ResNet18
+            </div>
+            <div class="p-3 rounded-lg bg-white dark:bg-darkbg-card border border-ivory-200 dark:border-darkbg-border">
+              <strong class="font-mono text-sage-800 dark:text-ivory-50">Databases:</strong> SQL (MySQL), NoSQL (MongoDB)
+            </div>
+            <div class="p-3 rounded-lg bg-white dark:bg-darkbg-card border border-ivory-200 dark:border-darkbg-border">
+              <strong class="font-mono text-sage-800 dark:text-ivory-50">Data Analysis:</strong> Tableau, Power BI, Microsoft Excel
+            </div>
+            <div class="p-3 rounded-lg bg-white dark:bg-darkbg-card border border-ivory-200 dark:border-darkbg-border">
+              <strong class="font-mono text-sage-800 dark:text-ivory-50">Tools &amp; Platforms:</strong> VS Code, IntelliJ IDEA, Git, GitHub, Postman
+            </div>
+            <div class="p-3 rounded-lg bg-white dark:bg-darkbg-card border border-ivory-200 dark:border-darkbg-border sm:col-span-2">
+              <strong class="font-mono text-sage-800 dark:text-ivory-50">Operating Systems:</strong> Windows, Linux
+            </div>
+          </div>
+        </div>
+
+        <!-- Projects -->
+        <div>
+          <h2 class="font-mono text-xs uppercase tracking-wider font-bold text-sage-700 dark:text-sage-300 mb-2">Projects &amp; Repositories</h2>
+          <div class="space-y-3">
+            <div class="p-4 rounded-xl bg-white dark:bg-darkbg-card border border-ivory-200 dark:border-darkbg-border space-y-1.5">
+              <div class="flex flex-wrap justify-between items-center">
+                <span class="font-bold text-sm text-sage-800 dark:text-ivory-50">InfraSense AI: AI-Powered IT Support &amp; Troubleshooting Agent</span>
+                <a href="https://github.com/shreya-a12/infrasense-ai.git" target="_blank" rel="noopener noreferrer" class="font-mono text-xs font-semibold text-sage-700 dark:text-sage-300 hover:underline">GitHub Repo ↗</a>
+              </div>
+              <p class="text-xs text-charcoal-600 dark:text-darkbg-muted leading-relaxed">
+                Full-stack IT support agent that analyses infrastructure metrics, detects issues such as high CPU usage, memory utilization, queue backlogs, and repeated errors, and generates actionable troubleshooting recommendations. Built with FastAPI diagnostic engine, Node.js/Express backend REST APIs, and React/TypeScript dashboard with Groq API explanation features.
+              </p>
+              <div class="text-[11px] font-mono text-charcoal-400">Tech Stack: React, TypeScript, Vite, Node.js, Express.js, Python, FastAPI, REST APIs, Groq API, Git, GitHub.</div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-white dark:bg-darkbg-card border border-ivory-200 dark:border-darkbg-border space-y-1.5">
+              <div class="flex flex-wrap justify-between items-center">
+                <span class="font-bold text-sm text-sage-800 dark:text-ivory-50">ContainerGuard – Docker Image Security Scanner</span>
+                <a href="https://github.com/shreya-a12/containerguard.git" target="_blank" rel="noopener noreferrer" class="font-mono text-xs font-semibold text-sage-700 dark:text-sage-300 hover:underline">GitHub Repo ↗</a>
+              </div>
+              <p class="text-xs text-charcoal-600 dark:text-darkbg-muted leading-relaxed">
+                Integrated Trivy to scan Docker images for known vulnerabilities, classify findings by severity, enforce security policies for High/Critical issues, and generate JSON/Markdown/HTML reports with a FastAPI SQLite store and React visualization dashboard.
+              </p>
+              <div class="text-[11px] font-mono text-charcoal-400">Tech Stack: Python, Trivy, FastAPI, REST APIs, SQLite, React, Vite, Pytest, Git, GitHub.</div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-white dark:bg-darkbg-card border border-ivory-200 dark:border-darkbg-border space-y-1.5">
+              <div class="flex flex-wrap justify-between items-center">
+                <span class="font-bold text-sm text-sage-800 dark:text-ivory-50">Food Recognition and Calorie Prediction System</span>
+                <a href="https://github.com/shreya-a12/Foor_Req.git" target="_blank" rel="noopener noreferrer" class="font-mono text-xs font-semibold text-sage-700 dark:text-sage-300 hover:underline">GitHub Repo ↗</a>
+              </div>
+              <p class="text-xs text-charcoal-600 dark:text-darkbg-muted leading-relaxed">
+                Full-stack AI application using a fine-tuned ResNet18 deep learning model to identify food items from images and provide automated calorie and nutritional analysis, integrated with portion estimation and JWT authentication on MERN stack.
+              </p>
+              <div class="text-[11px] font-mono text-charcoal-400">Tech Stack: MongoDB, Express.js, React.js, Node.js, PyTorch, ResNet18, Computer Vision, RESTful APIs, JWT, Multer.</div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-white dark:bg-darkbg-card border border-ivory-200 dark:border-darkbg-border space-y-1.5">
+              <div class="flex flex-wrap justify-between items-center">
+                <span class="font-bold text-sm text-sage-800 dark:text-ivory-50">EcoFinds – Sustainable Second-Hand Marketplace</span>
+                <a href="https://github.com/shreya-a12/Eco-Finds.git" target="_blank" rel="noopener noreferrer" class="font-mono text-xs font-semibold text-sage-700 dark:text-sage-300 hover:underline">GitHub Repo ↗</a>
+              </div>
+              <p class="text-xs text-charcoal-600 dark:text-darkbg-muted leading-relaxed">
+                Full-stack sustainable circular commerce application built on React, Node.js, Express, and MongoDB for second-hand product exchange and responsible reuse.
+              </p>
+              <div class="text-[11px] font-mono text-charcoal-400">Tech Stack: React, Node.js, Express.js, MongoDB, RESTful APIs.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Co-Curricular & Achievements -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="p-4 rounded-xl bg-white dark:bg-darkbg-card border border-ivory-200 dark:border-darkbg-border space-y-2">
+            <h2 class="font-mono text-xs uppercase tracking-wider font-bold text-sage-700 dark:text-sage-300">Co-Curricular &amp; Certifications</h2>
+            <ul class="list-disc list-inside space-y-1 text-xs text-charcoal-600 dark:text-darkbg-muted">
+              <li><strong>Patent Filed:</strong> 'IoT-Enabled Handcuff' (2024)</li>
+              <li><strong>Certifications:</strong> Data Structures (Dept Level), Analysis of Algorithms (Udemy), MERN Stack (Springboard Infosys)</li>
+              <li><strong>Hackathons:</strong> Smart India Internal Hackathon 2024 &amp; 2025, Oddo x NMIT 2025, SRUJANA 2025, Hack for Hire 2026, Unlox 2026</li>
+              <li><strong>Seminars:</strong> FAER Competitions 2025, Bengaluru Tech Summit 2025</li>
+              <li><strong>Clubs:</strong> HackerEarth &amp; CodeChef active member; organized "Algorithmic Minds"</li>
+            </ul>
+          </div>
+
+          <div class="p-4 rounded-xl bg-white dark:bg-darkbg-card border border-ivory-200 dark:border-darkbg-border space-y-2">
+            <h2 class="font-mono text-xs uppercase tracking-wider font-bold text-sage-700 dark:text-sage-300">Honors &amp; Personal Details</h2>
+            <ul class="list-disc list-inside space-y-1 text-xs text-charcoal-600 dark:text-darkbg-muted">
+              <li><strong>Department Topper:</strong> Continuous 6 semesters at CMRIT</li>
+              <li><strong>CodeChef Event:</strong> Second Place in JavaScript Event</li>
+              <li><strong>FAER 2025:</strong> Shortlisted for College Level Competition</li>
+              <li><strong>Languages:</strong> English, Hindi</li>
+              <li><strong>Hobbies:</strong> Dancing, Painting</li>
+              <li><strong>Permanent Address:</strong> Nai Basti Mahadeva, Siwan, Bihar - 841226</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECT DETAILS MODAL -->
+  <div id="projectModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-charcoal-900/75 backdrop-blur-sm">
+    <div class="relative w-full max-w-2xl max-h-[90vh] flex flex-col bg-white dark:bg-darkbg-card rounded-2xl shadow-2xl border border-ivory-300 dark:border-darkbg-border overflow-hidden">
+      <div class="flex items-center justify-between px-6 py-4 border-b border-ivory-300 dark:border-darkbg-border bg-ivory-100 dark:bg-darkbg-surface">
+        <div>
+          <span id="projModalCategory" class="text-[11px] font-mono uppercase tracking-wider text-sage-600 font-bold"></span>
+          <h3 id="projModalTitle" class="font-serif font-bold text-xl text-sage-800 dark:text-ivory-50"></h3>
+        </div>
+        <button onclick="closeProjectModal()" class="p-2 rounded-lg bg-ivory-200 dark:bg-darkbg-border hover:bg-ivory-300 text-charcoal-600 dark:text-ivory-200">
+          <svg class="w-4 h-4 stroke-current fill-none" stroke-width="2" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="p-6 sm:p-8 overflow-y-auto space-y-5 text-sm bg-ivory-50 dark:bg-darkbg-base">
+        <p id="projModalDesc" class="text-charcoal-600 dark:text-darkbg-muted leading-relaxed"></p>
+        
+        <div class="p-4 rounded-xl bg-white dark:bg-darkbg-card border border-ivory-200 dark:border-darkbg-border">
+          <h4 class="font-mono text-xs uppercase font-bold text-sage-700 dark:text-sage-300 mb-2">Architecture &amp; Key Features</h4>
+          <p id="projModalArch" class="text-xs text-charcoal-600 dark:text-ivory-300 leading-relaxed"></p>
+        </div>
+
+        <div>
+          <h4 class="font-mono text-xs uppercase font-bold text-charcoal-500 mb-2">Technologies Used</h4>
+          <div id="projModalTech" class="flex flex-wrap gap-2"></div>
+        </div>
+
+        <div class="pt-4 border-t border-ivory-200 dark:border-darkbg-border flex flex-wrap items-center justify-between gap-4">
+          <a id="projModalGithubBtn" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-mono text-xs font-bold bg-sage-800 hover:bg-sage-900 text-white shadow-soft-sm transition-all">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span id="projModalGithubBtnText">Open GitHub Repository ↗</span>
+          </a>
+          <button onclick="copyProjectRepoUrl()" class="px-3.5 py-2 rounded-xl border border-ivory-300 dark:border-darkbg-border font-mono text-xs text-charcoal-600 dark:text-ivory-300 hover:bg-ivory-200 dark:hover:bg-darkbg-surface">
+            Copy Repo URL
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST COMPONENT -->
+  <div id="toast" class="hidden fixed bottom-6 right-6 z-50 max-w-md p-4 rounded-xl bg-charcoal-900 text-ivory-100 shadow-2xl border border-sage-500 flex items-center gap-3">
+    <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-400"></i>
+    <span id="toastMsg" class="text-xs sm:text-sm font-sans flex-1"></span>
+    <button onclick="hideToast()" class="text-charcoal-400 hover:text-white"><i data-lucide="x" class="w-4 h-4"></i></button>
+  </div>
+
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Set Dynamic Year
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    // Scroll progress & Navbar style
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      const total = document.documentElement.scrollHeight - window.innerHeight;
+      const pct = (scrollY / total) * 100;
+      document.getElementById('scrollProgress').style.width = pct + '%';
+
+      const nav = document.getElementById('navbar');
+      if (scrollY > 20) {
+        nav.classList.add('glass-nav', 'border-b', 'border-ivory-300', 'shadow-soft-sm', 'py-3.5');
+        nav.classList.remove('py-5');
+      } else {
+        nav.classList.remove('glass-nav', 'border-b', 'border-ivory-300', 'shadow-soft-sm', 'py-3.5');
+        nav.classList.add('py-5');
+      }
+    });
+
+    // Theme toggle
+    function toggleTheme() {
+      document.documentElement.classList.toggle('dark');
+      localStorage.setItem('theme-mode', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+    }
+    document.getElementById('themeToggleBtn').addEventListener('click', toggleTheme);
+
+    // Mobile menu
+    function toggleMobileMenu() {
+      document.getElementById('mobileDrawer').classList.toggle('hidden');
+    }
+
+    // Toast functions
+    function showToast(msg) {
+      document.getElementById('toastMsg').textContent = msg;
+      const t = document.getElementById('toast');
+      t.classList.remove('hidden');
+      setTimeout(() => {
+        t.classList.add('hidden');
+      }, 4000);
+    }
+    function hideToast() {
+      document.getElementById('toast').classList.add('hidden');
+    }
+
+    function copyEmail() {
+      navigator.clipboard.writeText("singhsharaya00@gmail.com");
+      showToast("Email copied to clipboard: singhsharaya00@gmail.com");
+    }
+
+    function copyGithub(repo) {
+      const url = `https://github.com/shreya-a12/${repo}`;
+      navigator.clipboard.writeText(url);
+      showToast(`Repository URL copied: ${url}`);
+    }
+
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      document.getElementById('formNotice').classList.remove('hidden');
+      showToast("Message validated! Notice displayed below.");
+    }
+
+    // Resume modal & Tabs
+    function openResumeModal() {
+      switchResumeTab('pdf');
+      document.getElementById('resumeModal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeResumeModal() {
+      document.getElementById('resumeModal').classList.add('hidden');
+      document.body.style.overflow = 'unset';
+    }
+
+    function switchResumeTab(tab) {
+      const pdfView = document.getElementById('resumePdfView');
+      const textView = document.getElementById('resumeTextView');
+      const pdfBtn = document.getElementById('resumeTabPdfBtn');
+      const textBtn = document.getElementById('resumeTabTextBtn');
+
+      if (tab === 'pdf') {
+        pdfView.classList.remove('hidden');
+        textView.classList.add('hidden');
+        pdfBtn.className = 'px-3.5 py-1.5 rounded-lg text-xs font-mono font-bold bg-sage-800 text-white shadow-soft-sm transition-all';
+        textBtn.className = 'px-3.5 py-1.5 rounded-lg text-xs font-mono font-medium text-charcoal-600 dark:text-ivory-300 hover:bg-ivory-300 dark:hover:bg-darkbg-surface transition-all';
+      } else {
+        pdfView.classList.add('hidden');
+        textView.classList.remove('hidden');
+        textBtn.className = 'px-3.5 py-1.5 rounded-lg text-xs font-mono font-bold bg-sage-800 text-white shadow-soft-sm transition-all';
+        pdfBtn.className = 'px-3.5 py-1.5 rounded-lg text-xs font-mono font-medium text-charcoal-600 dark:text-ivory-300 hover:bg-ivory-300 dark:hover:bg-darkbg-surface transition-all';
+      }
+    }
+
+    // Project Architecture Modal
+    const projectsCatalog = {
+      'infrasense-ai': {
+        title: 'InfraSense AI Diagnostics',
+        category: 'AI & Intelligent Systems',
+        desc: 'An intelligent infrastructure diagnostics platform designed to identify simulated infrastructure incidents, analyze system metrics, detect operational issues, and generate actionable recommendations.',
+        arch: 'Built with a modular TypeScript backend utilizing Zod schema validation to guard telemetry inputs. The rule-based diagnostic engine maps error rates, CPU spikes, and queue depths to operational remediation procedures.',
+        tech: ['React', 'TypeScript', 'Node.js', 'Express', 'Zod', 'OpenAI API'],
+        repo: 'https://github.com/shreya-a12/infrasense-ai.git'
+      },
+      'containerguard': {
+        title: 'ContainerGuard',
+        category: 'Systems & Security',
+        desc: 'A container security analysis platform that scans container images, identifies vulnerabilities, evaluates security policies, and generates structured vulnerability reports.',
+        arch: 'Leverages FastAPI asynchronous execution loops to launch Trivy container inspection jobs, categorize CVEs by severity (CRITICAL, HIGH, MEDIUM, LOW), and persist scan histories into SQLite.',
+        tech: ['Python', 'FastAPI', 'Trivy', 'SQLite', 'React', 'Vite'],
+        repo: 'https://github.com/shreya-a12/containerguard.git'
+      },
+      'food-recognition': {
+        title: 'Food Recognition & Calorie AI',
+        category: 'AI & Intelligent Systems',
+        desc: 'An AI-powered food recognition application that identifies food items from images and estimates their calorie content using deep learning.',
+        arch: 'PyTorch vision pipeline processes images through fine-tuned ResNet18 convolutional feature extractors (achieving 93% classification accuracy), routing outputs to regression heads for caloric volume estimation.',
+        tech: ['Python', 'PyTorch', 'ResNet18', 'Deep Learning', 'MERN Stack'],
+        repo: 'https://github.com/shreya-a12/Foor_Req.git'
+      },
+      'ecofinds': {
+        title: 'EcoFinds',
+        category: 'Full Stack Web',
+        desc: 'A sustainable second-hand marketplace that encourages reuse and responsible consumption by allowing users to discover and exchange pre-owned products.',
+        arch: 'Decoupled React frontend and Express/MongoDB backend, featuring optimistic UI updates, category filtering, and responsive grid layouts designed for circular commerce.',
+        tech: ['React', 'Node.js', 'Express', 'MongoDB'],
+        repo: 'https://github.com/shreya-a12/Eco-Finds.git'
+      },
+      'mental-health': {
+        title: 'Mental Health Chatbot',
+        category: 'AI & Intelligent Systems',
+        desc: 'A conversational chatbot that uses Natural Language Processing techniques to understand user messages and generate relevant responses.',
+        arch: 'Employs NLTK and Scikit-learn pipelines to transform natural language prompts into TF-IDF vectors, evaluating cosine similarity scores to surface empathetic conversational replies.',
+        tech: ['Python', 'NLP', 'NLTK', 'Scikit-learn', 'TF-IDF'],
+        repo: 'https://github.com/shreya-a12'
+      }
+    };
+
+    let activeModalRepo = '';
+
+    function openProjectModal(id) {
+      const p = projectsCatalog[id];
+      if (!p) return;
+      document.getElementById('projModalCategory').textContent = p.category;
+      document.getElementById('projModalTitle').textContent = p.title;
+      document.getElementById('projModalDesc').textContent = p.desc;
+      document.getElementById('projModalArch').textContent = p.arch;
+      
+      const techEl = document.getElementById('projModalTech');
+      techEl.innerHTML = '';
+      p.tech.forEach(t => {
+        const badge = document.createElement('span');
+        badge.className = 'px-2.5 py-1 text-xs font-mono rounded bg-ivory-200 dark:bg-darkbg-surface text-charcoal-700 dark:text-ivory-200 border border-ivory-300 dark:border-darkbg-border';
+        badge.textContent = t;
+        techEl.appendChild(badge);
+      });
+
+      activeModalRepo = p.repo;
+      const ghBtn = document.getElementById('projModalGithubBtn');
+      ghBtn.href = p.repo;
+      document.getElementById('projModalGithubBtnText').textContent = 'Open GitHub: ' + p.repo.replace('https://github.com/', '') + ' ↗';
+
+      document.getElementById('projectModal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeProjectModal() {
+      document.getElementById('projectModal').classList.add('hidden');
+      document.body.style.overflow = 'unset';
+    }
+
+    function copyProjectRepoUrl() {
+      if (activeModalRepo) {
+        navigator.clipboard.writeText(activeModalRepo);
+        showToast('Repository link copied: ' + activeModalRepo);
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeResumeModal();
+        closeProjectModal();
+      }
+    });
+  </script>
+</body>
+</html>

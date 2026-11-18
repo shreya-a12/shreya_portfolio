@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#F8F7F2"/>
+  <rect x="40" y="40" width="1120" height="550" rx="20" fill="#FFFFFF" stroke="#E4E3DA" stroke-width="2"/>
+  
+  <!-- Subtle decorative accents -->
+  <circle cx="1060" cy="140" r="160" fill="#78977A" fill-opacity="0.08" />
+  <circle cx="150" cy="490" r="100" fill="#263D32" fill-opacity="0.04" />
+  
+  <!-- Brand Header -->
+  <rect x="90" y="90" width="48" height="48" rx="10" fill="#263D32"/>
+  <text x="114" y="122" font-family="'Playfair Display', Georgia, serif" font-size="22" font-weight="700" fill="#F8F7F2" text-anchor="middle">SS</text>
+  <text x="155" y="121" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="600" fill="#263D32" letter-spacing="1">SHREYA SINGH</text>
+  
+  <!-- Badge -->
+  <rect x="90" y="190" width="280" height="36" rx="18" fill="#EEECE3"/>
+  <circle cx="106" cy="208" r="5" fill="#78977A"/>
+  <text x="122" y="214" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="600" fill="#263D32" letter-spacing="0.5">OPEN TO OPPORTUNITIES</text>
+
+  <!-- Title -->
+  <text x="90" y="290" font-family="'Playfair Display', Georgia, serif" font-size="52" font-weight="700" fill="#263D32">Building Intelligent Solutions</text>
+  <text x="90" y="350" font-family="'Playfair Display', Georgia, serif" font-size="52" font-weight="700" fill="#78977A">Through Code.</text>
+  
+  <text x="90" y="415" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="500" fill="#74786F">Software Developer | Artificial Intelligence &amp; Data Science Student</text>
+  <text x="90" y="450" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="400" fill="#74786F">CMR Institute of Technology, Bengaluru • Expected July 2027</text>
+
+  <!-- Metrics Pill -->
+  <rect x="90" y="490" width="450" height="50" rx="10" fill="#F8F7F2" stroke="#E4E3DA" stroke-width="1.5"/>
+  <text x="110" y="522" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="700" fill="#263D32">★ 9.53 CGPA</text>
+  <text x="240" y="522" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="500" fill="#74786F">•</text>
+  <text x="260" y="522" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="600" fill="#263D32">Department Topper (All Semesters)</text>
+</svg>
